@@ -139,7 +139,11 @@ p { margin: 0; }
 .strip .pic svg { width: 108px; height: 108px; }
 .strip span { display: block; padding: 10px 14px 12px; font-size: 13px; font-weight: 600; color: #fff; text-align: left; }
 @keyframes slide { to { transform: translateX(calc(-50% - 8px)); } }
-@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .sticker, .strip-track { animation: none; } .strip { overflow-x: auto; } * { transition: none !important; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .sticker { animation: none; } .strip-track { animation-duration: 80s; } * { transition: none !important; } }
+.strip.paused .strip-track, .strip:focus-within .strip-track { animation-play-state: paused; }
+.strip-toggle { display: inline-flex; align-items: center; gap: 8px; margin-top: -18px; padding: 7px 14px; border-radius: 999px; border: 1px solid rgba(167,240,221,.35); background: rgba(255,255,255,.06); color: var(--mint); font: 600 13px var(--sans); cursor: pointer; }
+.strip-toggle:hover { background: rgba(255,255,255,.12); }
+.strip-toggle .icon { width: 14px; height: 14px; fill: currentColor; }
 
 /* Buttons */
 .btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 999px; background: var(--forest); color: #fff; font: 700 14px var(--sans); text-decoration: none; border: 0; cursor: pointer; transition: background var(--ease), transform var(--ease); }
@@ -484,6 +488,7 @@ dialog.lightbox .close { position: absolute; top: 8px; right: 8px; background: v
   <symbol id="i-checklist" viewBox="0 0 24 24"><path d="m4 6 1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17"/><path d="M11 6h9M11 12h9M11 18h9"/></symbol>
   <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></symbol>
   <symbol id="i-brief" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5h6v2"/><path d="M3 12h18"/></symbol>
+  <symbol id="i-pause" viewBox="0 0 24 24"><rect x="6" y="4.5" width="4" height="15" rx="1"/><rect x="14" y="4.5" width="4" height="15" rx="1"/></symbol>
   <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></symbol>
   <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
 </svg>
@@ -561,9 +566,10 @@ dialog.lightbox .close { position: absolute; top: 8px; right: 8px; background: v
         <a class="btn mint" href="#projects">See My Work</a>
         <button type="button" class="btn ghost" data-intro><svg class="icon"><use href="#i-play"/></svg>Watch My Introduction</button>
       </div>
-      <div class="strip" aria-label="Featured work">
+      <div class="strip" id="stripBox" aria-label="Featured work">
         <div class="strip-track" id="strip"></div>
       </div>
+      <button type="button" class="strip-toggle" id="stripToggle" aria-pressed="false"><svg class="icon"><use href="#i-pause"/></svg><span>Pause</span></button>
     </div>
   </div>
   <div class="wrap chapters" id="chapters"></div>
@@ -1176,6 +1182,14 @@ dialog.lightbox .close { position: absolute; top: 8px; right: 8px; background: v
     const a = el("a", "", picHtml(p) + '<span>' + esc(p.t) + '</span>');
     a.href = "#projects"; if (i >= stripItems.length) { a.setAttribute("aria-hidden", "true"); a.tabIndex = -1; }
     strip.appendChild(a);
+  });
+
+  const stripBox = document.getElementById("stripBox"), stripToggle = document.getElementById("stripToggle");
+  stripToggle.addEventListener("click", () => {
+    const paused = stripBox.classList.toggle("paused");
+    stripToggle.setAttribute("aria-pressed", String(paused));
+    stripToggle.querySelector("use").setAttribute("href", paused ? "#i-play" : "#i-pause");
+    stripToggle.querySelector("span").textContent = paused ? "Play" : "Pause";
   });
 
   /* Home chapters */
