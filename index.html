@@ -1,0 +1,1374 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23345C32'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='700' font-size='26' text-anchor='middle' fill='%23A7F0DD'%3EDS%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Diti Jay Shah | Instructional Designer">
+<meta property="og:description" content="Instructional design portfolio: eLearning modules, simulations, research and case studies.">
+<meta property="og:image" content="images/diti-headshot.jpg">
+<title>Diti Jay Shah Portfolio</title>
+<meta name="description" content="Instructional design portfolio of Diti Jay Shah, Learning and Development professional and Instructional Designer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: illustrated garden studio. Deep-green hero with drawn leaves, an arched portrait, a filled + outlined name (gallery-poster style) and a moving strip of illustrated work. Inside pages: work first, long text folded into "+" panels.
+   Type: Bricolage Grotesque (display), Instrument Serif italic (accents), Manrope (body).
+   Palette: Sage Peridot Morning. Single theme on purpose so the palette stays exact. */
+:root {
+  --forest: #345C32;
+  --forest-deep: #22401F;
+  --forest-dark: #274626;
+  --olive: #9CAC54;
+  --mint: #A7F0DD;
+  --sage: #97CD97;
+  --sun: #F2C14E;
+  --mint-soft: #E4F8F1;
+  --sage-soft: #E9F3E4;
+  --olive-soft: #F1F3E0;
+  --paper: #FBFBF5;
+  --white: #FFFFFF;
+  --ink: #1F2B1E;
+  --muted: #56624F;
+  --line: #DDE6D5;
+  --display: "Bricolage Grotesque", "Segoe UI", Helvetica, Arial, sans-serif;
+  --accent: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --sans: "Manrope", "Segoe UI", Helvetica, Arial, sans-serif;
+  --maxw: 1180px;
+  --radius: 22px;
+  --shadow: 0 12px 34px rgba(34, 64, 31, .12);
+  --ease: .2s ease;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+img { max-width: 100%; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body { background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 60; background: var(--white); }
+a { color: var(--forest); text-underline-offset: 3px; transition: color var(--ease); }
+:focus-visible { outline: 2px solid var(--forest); outline-offset: 3px; border-radius: 6px; }
+h1, h2, h3 { font-family: var(--display); color: var(--forest-deep); line-height: 1.08; text-wrap: balance; margin: 0; font-weight: 700; letter-spacing: -.02em; }
+h1 em, h2 em, .accent { font-family: var(--accent); font-style: italic; font-weight: 400; letter-spacing: 0; }
+p { margin: 0; }
+[id] { scroll-margin-top: 150px; }
+.wrap { max-width: var(--maxw); margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.icon { width: 20px; height: 20px; flex: none; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+/* Clay icon badge: gradient body, top highlight, soft drop shadow */
+.clay { position: relative; display: grid; place-items: center; width: 58px; height: 58px; border-radius: 18px; flex: none; color: #fff;
+  box-shadow: inset 0 2px 0 rgba(255,255,255,.55), inset 0 -6px 10px rgba(0,0,0,.14), 0 10px 18px -6px rgba(34,64,31,.45); }
+.clay::after { content: ""; position: absolute; left: 18%; top: 9%; width: 42%; height: 22%; border-radius: 999px; background: linear-gradient(rgba(255,255,255,.65), rgba(255,255,255,0)); }
+.clay .icon { position: relative; z-index: 1; width: 28px; height: 28px; stroke-width: 2.1; filter: drop-shadow(0 2px 1px rgba(0,0,0,.18)); }
+.k-mint { background: linear-gradient(145deg, #C9FBEC, #6FD3B9); color: var(--forest-deep); }
+.k-sage { background: linear-gradient(145deg, #C2E8C2, #6FAE6F); color: var(--forest-deep); }
+.k-olive { background: linear-gradient(145deg, #CAD683, #7D8D36); }
+.k-forest { background: linear-gradient(145deg, #5C9A57, #22401F); color: var(--mint); }
+.k-sun { background: linear-gradient(145deg, #FFE4A0, #E6A93A); color: var(--forest-deep); }
+
+/* ---------- Header ---------- */
+.site-header { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 50; background: rgba(255,255,255,.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.site-header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 72px; }
+.brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-size: 1.3rem; font-weight: 700; letter-spacing: -.02em; color: var(--forest-deep); text-decoration: none; white-space: nowrap; }
+.brand .clay { width: 38px; height: 38px; border-radius: 12px; font-size: 14px; font-weight: 800; color: var(--mint); }
+.brand .clay span { position: relative; z-index: 1; }
+.nav-toggle { display: none; background: var(--forest); border: 0; border-radius: 999px; padding: 9px 16px; font: 600 14px var(--sans); color: #fff; cursor: pointer; align-items: center; gap: 8px; }
+.menu { list-style: none; margin: 0; padding: 0; display: flex; gap: 2px; }
+.menu > li { position: relative; }
+.menu > li > a { display: flex; align-items: center; gap: 6px; padding: 9px 11px; border-radius: 999px; font-size: 14px; font-weight: 600; color: var(--ink); text-decoration: none; white-space: nowrap; transition: background var(--ease), color var(--ease); }
+.menu > li > a .caret { width: 12px; height: 12px; color: var(--muted); }
+.menu > li > a:hover, .menu > li:focus-within > a { background: var(--sage-soft); }
+.menu > li > a[aria-current="page"] { background: var(--forest); color: #fff; }
+.menu > li > a[aria-current="page"] .caret { color: var(--mint); }
+.sub { list-style: none; margin: 0; padding: 8px; position: absolute; right: 0; top: calc(100% + 8px); min-width: 260px; background: var(--white); border: 1px solid var(--line); border-radius: 18px; box-shadow: var(--shadow); opacity: 0; visibility: hidden; transform: translateY(-4px); transition: opacity var(--ease), transform var(--ease), visibility var(--ease); }
+.sub::before { content: ""; position: absolute; inset: -10px 0 auto; height: 10px; }
+.menu > li:hover .sub, .menu > li:focus-within .sub { opacity: 1; visibility: visible; transform: none; }
+.sub a { display: flex; align-items: center; gap: 12px; padding: 7px 10px; border-radius: 12px; font-size: 14px; font-weight: 500; color: var(--ink); text-decoration: none; }
+.sub a .clay { width: 32px; height: 32px; border-radius: 10px; }
+.sub a .clay .icon { width: 16px; height: 16px; }
+.sub a:hover { background: var(--mint-soft); color: var(--forest); }
+@media (max-width: 1240px) {
+  .nav-toggle { display: inline-flex; }
+  .site-nav { position: absolute; left: 0; right: 0; top: 100%; background: var(--white); border-bottom: 1px solid var(--line); box-shadow: var(--shadow); max-height: calc(100vh - 72px); overflow-y: auto; }
+  .site-nav:not(.open) { display: none; }
+  .menu { flex-direction: column; padding: 10px max(16px, env(safe-area-inset-right, 0px)) 16px max(16px, env(safe-area-inset-left, 0px)); }
+  .menu > li > a { font-size: 16px; padding: 11px 12px; }
+  .menu > li > a .caret { display: none; }
+  .sub { position: static; opacity: 1; visibility: visible; transform: none; box-shadow: none; border: 0; padding: 0 0 6px 18px; min-width: 0; }
+}
+
+/* ---------- Hero ---------- */
+.hero { position: relative; overflow: hidden; background: radial-gradient(120% 90% at 50% 0%, #3E6B3B 0%, var(--forest-deep) 70%); color: #fff; }
+.hero .art { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.hero .wrap { position: relative; padding-block: 40px 40px; text-align: center; }
+.eyebrow-row { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; }
+.pill { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; font-size: 13px; font-weight: 600; background: rgba(167, 240, 221, .14); color: var(--mint); border: 1px solid rgba(167, 240, 221, .3); }
+.pill .icon { width: 15px; height: 15px; }
+.stage { position: relative; width: min(380px, 74vw); margin: 34px auto 0; }
+.arch { position: relative; aspect-ratio: 477 / 560; border-radius: 999px 999px 26px 26px; overflow: hidden; border: 8px solid var(--mint); background: var(--sage); box-shadow: 0 30px 60px rgba(0,0,0,.3); }
+.arch img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; display: block; }
+.halo { position: absolute; width: 140%; aspect-ratio: 1; left: -20%; top: -14%; border-radius: 50%; background: radial-gradient(circle, rgba(167,240,221,.32), rgba(167,240,221,0) 65%); }
+.name { position: relative; z-index: 3; margin-top: -70px; font-family: var(--display); font-weight: 800; font-size: clamp(3rem, 10vw, 8rem); line-height: .92; letter-spacing: -.04em; color: #fff; text-shadow: 0 8px 30px rgba(0,0,0,.35); }
+.outline { display: block; margin-top: 10px; font-family: var(--display); font-weight: 800; font-size: clamp(1.6rem, 5vw, 3.6rem); line-height: 1; letter-spacing: -.03em; color: transparent; -webkit-text-stroke: 1.5px var(--mint); text-wrap: balance; }
+@supports not (-webkit-text-stroke: 1px black) { .outline { color: var(--mint); } }
+.role { margin-top: 14px; font-family: var(--accent); font-style: italic; font-size: clamp(1.2rem, 2.4vw, 1.6rem); color: #E6F2E3; }
+.sticker { position: absolute; z-index: 2; width: 74px; height: 74px; border-radius: 24px; animation: bob 6s ease-in-out infinite; }
+.sticker .icon { width: 34px; height: 34px; }
+.sticker.s1 { left: -70px; top: 16%; rotate: -10deg; }
+.sticker.s2 { right: -66px; top: 8%; rotate: 9deg; animation-delay: -2s; }
+.sticker.s3 { right: -80px; top: 50%; rotate: -7deg; animation-delay: -4s; }
+.sticker.s4 { left: -84px; top: 56%; rotate: 10deg; animation-delay: -1s; }
+@keyframes bob { 0%,100% { translate: 0 0; } 50% { translate: 0 -10px; } }
+.cta { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+@media (max-width: 560px) {
+  .sticker { width: 54px; height: 54px; border-radius: 18px; }
+  .sticker .icon { width: 26px; height: 26px; }
+  .sticker.s1 { left: -24px; } .sticker.s2 { right: -20px; } .sticker.s3 { right: -26px; } .sticker.s4 { left: -28px; }
+  .name { margin-top: -44px; }
+}
+/* Work strip (marquee) */
+.strip { position: relative; margin-top: 44px; overflow: hidden; padding-block: 8px 34px; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.strip-track { display: flex; gap: 16px; width: max-content; animation: slide 46s linear infinite; }
+.strip:hover .strip-track { animation-play-state: paused; }
+.strip a { flex: none; width: 190px; border-radius: 20px; overflow: hidden; text-decoration: none; background: rgba(255,255,255,.06); border: 1px solid rgba(167,240,221,.2); transition: transform var(--ease); }
+.strip a:hover { transform: translateY(-4px); }
+.strip .pic { height: 130px; display: grid; place-items: center; }
+.strip .pic svg { width: 108px; height: 108px; }
+.strip span { display: block; padding: 10px 14px 12px; font-size: 13px; font-weight: 600; color: #fff; text-align: left; }
+@keyframes slide { to { transform: translateX(calc(-50% - 8px)); } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .sticker, .strip-track { animation: none; } .strip { overflow-x: auto; } * { transition: none !important; } }
+
+/* Buttons */
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 22px; border-radius: 999px; background: var(--forest); color: #fff; font: 700 14px var(--sans); text-decoration: none; border: 0; cursor: pointer; transition: background var(--ease), transform var(--ease); }
+.btn:hover { background: var(--forest-dark); color: #fff; transform: translateY(-1px); }
+.btn.mint { background: var(--mint); color: var(--forest-deep); }
+.btn.mint:hover { background: #fff; color: var(--forest-deep); }
+.btn.ghost { background: transparent; color: var(--forest); box-shadow: inset 0 0 0 1.5px var(--forest); }
+.btn.ghost:hover { background: var(--forest); color: #fff; }
+.hero .btn.ghost, .on-dark .btn.ghost { color: #fff; box-shadow: inset 0 0 0 1.5px rgba(255,255,255,.6); }
+.btn .icon { width: 16px; height: 16px; }
+.btn.disabled { background: var(--line); color: var(--muted); cursor: default; transform: none; }
+
+/* ---------- Home chapters ---------- */
+.chapters { padding-block: 64px; display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); }
+.chapter { position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 8px; padding: 24px 24px 0; border-radius: var(--radius); text-decoration: none; color: var(--ink); transition: transform var(--ease), box-shadow var(--ease); }
+.chapter:hover { transform: translateY(-4px); box-shadow: var(--shadow); color: var(--ink); }
+.chapter .num { font-family: var(--accent); font-style: italic; font-size: 1.15rem; color: var(--forest); }
+.chapter h3 { font-size: 1.5rem; }
+.chapter p { font-size: 14px; color: var(--muted); }
+.chapter svg.ill { width: 150px; height: 150px; align-self: flex-end; margin: 4px -6px -10px 0; }
+.c-mint { background: var(--mint-soft); } .c-sage { background: var(--sage-soft); } .c-olive { background: var(--olive-soft); }
+
+/* ---------- Page bands ---------- */
+.band { background: var(--sage-soft); position: relative; overflow: hidden; }
+.band .wrap { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 32px; align-items: center; padding-block: 52px; }
+.band.mint { background: var(--mint-soft); } .band.olive { background: var(--olive-soft); }
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: 12.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--forest); }
+.band h1 { font-size: clamp(2.3rem, 5.4vw, 4rem); margin-top: 10px; }
+.band h1 em { color: var(--forest); }
+.band .lede { margin-top: 14px; max-width: 60ch; color: var(--muted); font-size: 1.05rem; }
+.band svg.ill { width: 210px; height: 210px; }
+@media (max-width: 680px) { .band .wrap { grid-template-columns: 1fr; padding-block: 36px; } .band svg.ill { width: 130px; height: 130px; order: -1; } }
+
+/* ---------- Content ---------- */
+.page { padding-bottom: 80px; }
+.block { padding-block: 56px 8px; }
+.sec-head { display: flex; align-items: center; gap: 16px; }
+.sec-head h2 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); }
+.sec-sub { margin-top: 8px; font-family: var(--accent); font-style: italic; font-size: 1.35rem; color: var(--forest); }
+.prose { max-width: 68ch; display: grid; gap: 16px; margin-top: 20px; }
+.prose h3 { font-size: 1.25rem; margin-top: 6px; }
+.grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); margin-top: 28px; }
+.card { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; min-width: 0; }
+.tile { display: flex; flex-direction: column; gap: 12px; }
+.tile h3 { font-size: 1.15rem; letter-spacing: -.01em; }
+.tile p { font-size: 14.5px; color: var(--muted); }
+details.more { margin-top: 18px; max-width: 72ch; border-top: 1px solid var(--line); }
+details.more > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; padding: 14px 0; font-weight: 700; font-size: 15px; color: var(--forest); }
+details > summary::-webkit-details-marker { display: none; }
+.plus { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; background: var(--forest); color: #fff; flex: none; transition: transform var(--ease), background var(--ease); }
+.plus .icon { width: 16px; height: 16px; stroke-width: 2.4; }
+details[open] > summary .plus { transform: rotate(45deg); background: var(--olive); }
+details.more .prose { margin-top: 0; padding-bottom: 14px; }
+.quote { position: relative; margin: 0; padding: 40px 36px; border-radius: var(--radius); background: var(--forest); color: #fff; overflow: hidden; }
+.quote p { position: relative; font-family: var(--accent); font-style: italic; font-size: clamp(1.45rem, 2.8vw, 2rem); line-height: 1.3; }
+.quote .mark { position: absolute; right: 22px; top: -36px; font-family: var(--accent); font-size: 230px; line-height: 1; color: rgba(167,240,221,.16); }
+.quote .who { position: relative; display: flex; align-items: center; gap: 12px; margin-top: 18px; }
+.quote .who b { display: block; font-size: 15px; }
+.quote .who small { display: block; font-size: 13px; color: var(--mint); }
+.quote .tagline { position: relative; display: inline-block; margin-bottom: 14px; font-size: 11.5px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--mint); }
+
+/* Portfolio jump bar */
+.jumpbar { position: sticky; top: calc(72px + env(safe-area-inset-top, 0px)); z-index: 40; background: rgba(251,251,245,.94); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+.jumpbar .wrap { display: flex; gap: 8px; overflow-x: auto; padding-block: 12px; scrollbar-width: none; }
+.jumpbar .wrap::-webkit-scrollbar { display: none; }
+.jumpbar a { flex: none; display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px; background: var(--white); border: 1px solid var(--line); font-size: 13.5px; font-weight: 700; color: var(--forest-deep); text-decoration: none; transition: background var(--ease); }
+.jumpbar a:hover { background: var(--mint-soft); }
+.jumpbar a .count { font-size: 11.5px; padding: 1px 7px; border-radius: 999px; background: var(--forest); color: #fff; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+.filters button { border: 1px solid var(--line); background: var(--white); color: var(--forest-deep); border-radius: 999px; padding: 7px 15px; font: 600 13.5px var(--sans); cursor: pointer; transition: background var(--ease), color var(--ease); }
+.filters button[aria-pressed="true"] { background: var(--forest); color: #fff; border-color: var(--forest); }
+
+/* Project cards */
+.project { padding: 0; overflow: hidden; display: flex; flex-direction: column; transition: transform var(--ease), box-shadow var(--ease); }
+.project:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+.project .pic { position: relative; height: 170px; display: grid; place-items: center; overflow: hidden; }
+.project .pic svg { position: relative; width: 140px; height: 140px; transition: transform .35s ease; }
+.project:hover .pic svg { transform: scale(1.06) rotate(-2deg); }
+.p-mint { background: radial-gradient(circle at 30% 20%, #F2FFFA, #BDF3E3); }
+.p-sage { background: radial-gradient(circle at 30% 20%, #F3FAF1, #C4E4C2); }
+.p-olive { background: radial-gradient(circle at 30% 20%, #FAFBEF, #DCE3A8); }
+.p-forest { background: radial-gradient(circle at 30% 20%, #4C7F48, #22401F); }
+.project .body { padding: 18px 22px 22px; display: flex; flex-direction: column; gap: 8px; flex: 1; }
+.project .tag { align-self: flex-start; font-size: 11.5px; font-weight: 700; letter-spacing: .05em; color: var(--forest); background: var(--sage-soft); padding: 4px 10px; border-radius: 999px; }
+.project h3 { font-size: 1.22rem; letter-spacing: -.015em; }
+.project p { font-size: 14px; color: var(--muted); flex: 1; }
+.project .btn { margin-top: 8px; align-self: flex-start; padding: 10px 18px; font-size: 13.5px; }
+.project .pic.photo { background: var(--sage-soft); }
+.project .pic.photo img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; transition: transform .35s ease; }
+.project:hover .pic.photo img { transform: scale(1.04); }
+.strip .pic.photo { padding: 0; } .strip .pic.photo img { width: 100%; height: 100%; object-fit: cover; object-position: top; display: block; }
+.project .actions { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-top: 8px; }
+.project .actions .btn { margin-top: 0; }
+.project .mini { font-size: 13px; font-weight: 600; }
+.project .cs-link { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: var(--forest); text-decoration: none; padding: 4px 10px; border-radius: 999px; background: var(--mint-soft); align-self: flex-start; }
+.project .cs-link:hover { background: var(--mint); }
+.cs .inner { display: grid; gap: 22px; }
+.cs-top { display: grid; grid-template-columns: 150px minmax(0, 1fr); gap: 22px; align-items: center; }
+.cs-top svg.ill { width: 140px; height: 140px; }
+.cs-shot { width: 150px; aspect-ratio: 4 / 3; object-fit: cover; object-position: top; border-radius: 14px; box-shadow: var(--shadow); }
+.cs-top p { font-size: 15.5px; }
+.cs-grid { margin: 0; display: grid; gap: 14px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.cs-grid > div { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; }
+.cs-grid > div.wide { grid-column: 1 / -1; }
+.cs-grid dt { font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--olive); margin-bottom: 4px; }
+.cs-grid dd { margin: 0; font-size: 14.5px; }
+.cs-grid ol { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+.cs .btn { justify-self: start; }
+.todo { display: inline-block; font-size: 13px; font-weight: 600; color: #7A5A12; background: #FFF3CF; border: 1px dashed #E6A93A; border-radius: 8px; padding: 2px 8px; }
+@media (max-width: 640px) { .cs-top, .cs-grid { grid-template-columns: 1fr; } .cs-top svg.ill, .cs-shot { width: 110px; height: auto; } }
+.pos-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; margin-top: -34px; position: relative; }
+.pos-stats div { background: var(--white); border: 1px solid var(--line); border-radius: 18px; padding: 16px 18px; box-shadow: var(--shadow); }
+.pos-stats b { display: block; font-family: var(--display); font-size: 2.2rem; font-weight: 800; line-height: 1; color: var(--forest); letter-spacing: -.03em; }
+.pos-stats span { font-size: 13.5px; color: var(--muted); font-weight: 600; }
+@media (max-width: 680px) { .pos-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 20px; } }
+.course-grid { display: grid; gap: 18px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); margin-top: 28px; }
+.course { display: flex; flex-direction: column; gap: 12px; }
+.course .head { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 14px; align-items: center; }
+.course .code { font-size: 12px; font-weight: 800; letter-spacing: .12em; color: var(--olive); }
+.course h3 { font-size: 1.18rem; letter-spacing: -.01em; }
+.intro-video { font: inherit; border: 0; cursor: pointer; text-align: left; display: inline-flex; align-items: center; gap: 14px; margin-top: 24px; padding: 10px 20px 10px 10px; border-radius: 999px; background: var(--forest); color: #fff; text-decoration: none; transition: background var(--ease), transform var(--ease); }
+.intro-video:hover { background: var(--forest-deep); color: #fff; transform: translateY(-2px); }
+.intro-video { padding: 8px 22px 8px 8px; border-radius: 22px; }
+.intro-video .thumb { position: relative; width: 120px; aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden; flex: none; }
+.intro-video .thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.intro-video .pbtn { position: absolute; inset: 0; margin: auto; width: 38px; height: 38px; border-radius: 50%; background: var(--mint); color: var(--forest-deep); display: grid; place-items: center; box-shadow: 0 4px 12px rgba(0,0,0,.3); }
+.hero button.btn { font: 700 14px var(--sans); }
+dialog.player .audio-stage { display: grid; justify-items: center; gap: 18px; padding: 28px 24px 32px; background: radial-gradient(circle at 50% 20%, #4C7F48, var(--forest-deep)); }
+dialog.player .audio-stage svg { width: 150px; height: 150px; }
+dialog.player .audio-stage audio { width: min(560px, 100%); }
+dialog.player video { display: block; width: 100%; max-height: 80vh; background: #000; }
+.intro-video .pbtn .icon { width: 20px; height: 20px; fill: currentColor; }
+.intro-video b { display: block; font-size: 15px; }
+.intro-video small { display: block; font-size: 12.5px; color: var(--mint); }
+.course .pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.course .type { font-size: 12px; font-weight: 700; padding: 3px 10px; border-radius: 999px; background: var(--olive-soft); color: #5E6B24; }
+.course .type.t-core { background: var(--forest); color: #fff; }
+.course .type.t-required { background: var(--mint); color: var(--forest-deep); }
+.course .instr { display: flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 600; color: var(--muted); }
+.course .instr .icon { width: 16px; height: 16px; color: var(--olive); }
+.course .credits { align-self: flex-start; font-size: 12px; font-weight: 700; color: var(--forest); background: var(--sage-soft); padding: 3px 10px; border-radius: 999px; }
+.course p { font-size: 14.5px; color: var(--ink); }
+.course details.more { margin-top: 0; }
+.course details.more > summary { padding: 8px 0; font-size: 14px; }
+.course .work { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 6px; border-top: 1px solid var(--line); }
+.course .work span { font-size: 11.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); width: 100%; padding-top: 8px; }
+.course .work a { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: var(--forest-deep); background: var(--mint-soft); padding: 5px 11px; border-radius: 999px; text-decoration: none; }
+.course .work a:hover { background: var(--mint); }
+.course .work a .icon { width: 14px; height: 14px; }
+.table-wrap { overflow-x: auto; margin-top: 24px; border: 1px solid var(--line); border-radius: 18px; background: var(--white); }
+.pos-table { width: 100%; border-collapse: collapse; font-size: 14.5px; min-width: 860px; }
+.pos-table th, .pos-table td { text-align: left; padding: 12px 16px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.pos-table th { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--sage-soft); }
+.pos-table td:first-child { font-weight: 800; color: var(--forest); white-space: nowrap; }
+.pos-table td:nth-child(5) { font-variant-numeric: tabular-nums; font-weight: 700; }
+.pos-table td:nth-child(4) { white-space: nowrap; }
+.pos-table tfoot td { font-weight: 800; color: var(--forest-deep); border-bottom: 0; background: var(--olive-soft); }
+.pos-table a { font-weight: 600; }
+.logo-card.round { width: 170px; padding: 11px; border-radius: 50%; }
+.logo-card.round img { border-radius: 50%; }
+dialog.player { width: min(1100px, 96vw); border: 0; padding: 0; border-radius: 20px; background: var(--forest-deep); overflow: hidden; }
+dialog.player::backdrop { background: rgba(20, 34, 19, .88); }
+dialog.player .bar { display: flex; align-items: center; gap: 12px; padding: 12px 14px 12px 20px; color: #fff; }
+dialog.player .bar h3 { flex: 1; color: #fff; font-size: 1.05rem; min-width: 0; }
+dialog.player .bar a { color: var(--mint); font-size: 13px; font-weight: 600; }
+dialog.player .bar button { background: var(--mint); color: var(--forest-deep); border: 0; border-radius: 999px; width: 38px; height: 38px; display: grid; place-items: center; cursor: pointer; flex: none; }
+dialog.player iframe { display: block; width: 100%; aspect-ratio: 4 / 3; max-height: 80vh; border: 0; background: #000; }
+
+/* Frameworks */
+.fw > summary { list-style: none; cursor: pointer; display: flex; flex-direction: column; gap: 12px; }
+.fw .hint { display: inline-flex; align-items: center; gap: 8px; font-size: 13.5px; font-weight: 700; color: var(--forest); }
+.fw .hint .plus { width: 24px; height: 24px; }
+.fw .hint .plus .icon { width: 13px; height: 13px; }
+.fw dl { margin: 14px 0 0; display: grid; gap: 10px; font-size: 14px; }
+.fw dt { font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--olive); }
+.fw dd { margin: 0; }
+.refs { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; font-size: 13.5px; color: var(--muted); }
+.refs li { padding-left: 2em; text-indent: -2em; }
+
+/* "About this portfolio" stack */
+.stack { display: grid; gap: 12px; margin-top: 28px; }
+.fold { background: var(--white); border: 1px solid var(--line); border-radius: var(--radius); }
+.fold > summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 16px; align-items: center; padding: 18px 20px; }
+.fold > summary h3 { font-size: 1.2rem; }
+.fold > summary small { display: block; color: var(--muted); font-size: 13.5px; margin-top: 2px; font-family: var(--sans); }
+.fold .inner { padding: 0 24px 24px; }
+.fold .inner .prose { margin-top: 0; }
+.fold[open] { box-shadow: var(--shadow); }
+@media (max-width: 520px) { .fold > summary { grid-template-columns: minmax(0, 1fr) auto; } .fold > summary .clay { display: none; } }
+
+/* Skills (badge spec, palette and font updated) */
+.skills-panel { background: #FFFFFF; border-radius: var(--radius); padding: 32px; margin-top: 28px; border: 1px solid var(--line); }
+.skill-group + .skill-group { margin-top: 30px; }
+.skill-group h3 { display: flex; align-items: center; gap: 12px; font-family: var(--display); color: var(--forest); font-weight: 700; font-size: 18px; margin: 0 0 12px; letter-spacing: -.01em; }
+.skill-group h3 .clay { width: 36px; height: 36px; border-radius: 12px; }
+.skill-group h3 .clay .icon { width: 18px; height: 18px; }
+.badges { display: flex; flex-wrap: wrap; gap: 8px; }
+.skill-badge { display: inline-block; background: var(--forest); color: #FFFFFF; font-family: var(--sans); font-weight: 600; font-size: 13.5px; line-height: 1.3; padding: 9px 13px; border-radius: 999px; transition: background-color 0.2s ease; }
+.skill-badge:hover { background: var(--forest-deep); }
+@media (max-width: 600px) { .skills-panel { padding: 22px 18px; } .skill-badge { font-size: 13px; padding: 9px 11px; } }
+
+/* About */
+.about-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 48px; align-items: center; }
+.bw-arch { max-width: 340px; margin: 0 auto; position: relative; }
+.bw-arch .frame { aspect-ratio: 477 / 560; border-radius: 999px 999px 22px 22px; overflow: hidden; border: 6px solid var(--white); box-shadow: 18px 18px 0 var(--sage), var(--shadow); }
+.bw-arch img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 20%; filter: grayscale(100%); display: block; }
+.bw-arch .tag-float { position: absolute; left: -10px; bottom: 26px; background: var(--white); border-radius: 999px; padding: 8px 16px; font-size: 13px; font-weight: 700; color: var(--forest); box-shadow: var(--shadow); }
+@media (max-width: 820px) { .about-grid { grid-template-columns: 1fr; } }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.chip { display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px 6px 6px; border-radius: 999px; background: var(--white); border: 1px solid var(--line); color: var(--forest-deep); font-size: 13.5px; font-weight: 600; }
+.chip .clay { width: 28px; height: 28px; border-radius: 50%; }
+.chip .clay .icon { width: 14px; height: 14px; }
+.chip.plain { padding: 6px 14px; }
+.direction { margin-top: 26px; display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: start; padding: 24px; border-radius: var(--radius); background: var(--mint-soft); max-width: 72ch; }
+.direction h3 { font-size: 1.15rem; }
+.direction p { margin-top: 6px; font-size: 15px; }
+
+/* Resume */
+.timeline { list-style: none; margin: 28px 0 0; padding: 0; display: grid; gap: 14px; max-width: 880px; }
+.timeline li { display: grid; grid-template-columns: 58px 96px minmax(0, 1fr); gap: 18px; align-items: center; padding: 16px 20px; background: var(--white); border: 1px solid var(--line); border-radius: 18px; }
+.timeline .yr { font-family: var(--accent); font-style: italic; font-size: 1.5rem; color: var(--forest); }
+.timeline h3 { font-family: var(--sans); font-size: 1rem; font-weight: 700; color: var(--ink); letter-spacing: 0; }
+.timeline p { font-size: 14px; color: var(--muted); }
+@media (max-width: 560px) { .timeline li { grid-template-columns: 58px minmax(0, 1fr); } .timeline li > div:last-child { grid-column: 1 / -1; } }
+.download-card { margin-top: 28px; display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 22px; align-items: center; padding: 28px; border-radius: var(--radius); background: var(--forest); color: #fff; max-width: 880px; }
+.download-card h3 { color: #fff; font-size: 1.5rem; }
+.download-card .row { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+.download-card svg.ill { width: 96px; height: 96px; }
+@media (max-width: 560px) { .download-card { grid-template-columns: 1fr; } }
+
+/* Research */
+.study { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 30px; align-items: center; padding: 36px; border-radius: var(--radius); background: radial-gradient(circle at 80% 30%, #4C7F48, var(--forest-deep)); color: #fff; }
+.study .eyebrow { color: var(--mint); }
+.study h2 { color: #fff; font-size: clamp(1.45rem, 3vw, 2.1rem); margin-top: 10px; }
+.study svg.ill { width: 170px; height: 170px; }
+@media (max-width: 640px) { .study { grid-template-columns: 1fr; } .study svg.ill { width: 110px; height: 110px; } }
+
+/* Journey */
+.gallery { columns: 3 260px; column-gap: 18px; margin-top: 28px; }
+.gallery button { display: block; width: 100%; margin: 0 0 18px; padding: 0; border: 0; background: var(--white); border-radius: var(--radius); box-shadow: var(--shadow); overflow: hidden; cursor: zoom-in; break-inside: avoid; text-align: left; font: inherit; }
+.gallery img { display: block; width: 100%; height: auto; transition: transform .35s ease; }
+.gallery button:hover img { transform: scale(1.03); }
+.gallery .cap { display: block; padding: 12px 16px 14px; font-size: 13.5px; color: var(--muted); }
+dialog.lightbox { border: 0; padding: 0; background: transparent; max-width: min(1000px, 94vw); }
+dialog.lightbox::backdrop { background: rgba(20, 34, 19, .88); }
+dialog.lightbox img { display: block; max-width: 100%; max-height: 82vh; border-radius: 12px; margin: 0 auto; background: #fff; }
+dialog.lightbox p { color: #fff; text-align: center; margin-top: 12px; font-size: 14px; }
+dialog.lightbox .close { position: absolute; top: 8px; right: 8px; background: var(--mint); color: var(--forest-deep); border: 0; border-radius: 999px; width: 40px; height: 40px; display: grid; place-items: center; cursor: pointer; }
+
+/* Internship */
+.logo-card { background: var(--white); border-radius: 24px; padding: 18px 22px; box-shadow: var(--shadow); width: 300px; max-width: 100%; }
+.band .facts .chip { white-space: nowrap; }
+@media (max-width: 680px) { .logo-card { width: 220px; } .band .facts .chip { white-space: normal; } }
+.logo-card img { display: block; width: 100%; height: auto; }
+.facts { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.materials .n { font-family: var(--accent); font-style: italic; font-size: 1.3rem; color: var(--olive); line-height: 1; }
+.quotes { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); margin-top: 28px; }
+.quotes .quote:nth-child(2) { background: radial-gradient(circle at 20% 0%, #B7C76A, #7D8D36); }
+.quotes .quote:nth-child(2) .who small, .quotes .quote:nth-child(2) .tagline { color: #F3F7DD; }
+.avatar { width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--mint); color: var(--forest-deep); font-weight: 800; font-family: var(--display); }
+.cert { margin-top: 28px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 28px; align-items: center; padding: 26px; border-radius: var(--radius); background: var(--olive-soft); }
+.cert button { padding: 0; border: 0; background: none; cursor: zoom-in; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow); transform: rotate(-1.5deg); transition: transform var(--ease); }
+.cert button:hover { transform: rotate(0); }
+.cert img { display: block; width: 100%; height: auto; }
+@media (max-width: 700px) { .cert { grid-template-columns: 1fr; } }
+
+/* Contact */
+.contact-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); margin-top: 8px; }
+.contact-card { display: flex; flex-direction: column; gap: 12px; padding: 26px; border-radius: var(--radius); background: var(--white); border: 1px solid var(--line); }
+.contact-card .label { font-size: 12px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.contact-card .val { font-size: 1.05rem; font-weight: 600; color: var(--ink); overflow-wrap: anywhere; user-select: all; }
+.contact-card .val a { color: var(--ink); }
+.copy { align-self: flex-start; background: none; border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font: 600 13px var(--sans); color: var(--forest); cursor: pointer; text-decoration: none; transition: background var(--ease); }
+.copy:hover { background: var(--sage-soft); }
+
+/* Footer */
+.site-footer { position: relative; background: var(--forest-deep); color: #D8E6D5; overflow: hidden; }
+.site-footer .wrap { position: relative; display: flex; flex-wrap: wrap; gap: 16px 28px; align-items: center; justify-content: space-between; padding-block: 40px calc(32px + env(safe-area-inset-bottom, 0px)); font-size: 14px; }
+.site-footer .sig { font-family: var(--display); font-weight: 800; letter-spacing: -.03em; font-size: 1.7rem; color: #fff; }
+.site-footer a { color: #fff; }
+.foot-icons { display: flex; gap: 10px; }
+.foot-icons a { width: 44px; height: 44px; border-radius: 14px; }
+.foot-icons a .icon { width: 20px; height: 20px; }
+.to-top { text-decoration: none; display: inline-flex; gap: 6px; align-items: center; color: var(--mint) !important; font-weight: 600; }
+.toast { position: fixed; left: 50%; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); transform: translateX(-50%); background: var(--forest-deep); color: #fff; padding: 10px 18px; border-radius: 999px; font-size: 14px; z-index: 80; }
+</style>
+
+<!-- Shared SVG: line icons for small UI, gradients + filters for the illustrations -->
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="gMint" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D6FFF2"/><stop offset="1" stop-color="#6FD3B9"/></linearGradient>
+    <linearGradient id="gSage" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#CBEDCB"/><stop offset="1" stop-color="#6FAE6F"/></linearGradient>
+    <linearGradient id="gOlive" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#D3DE8F"/><stop offset="1" stop-color="#7D8D36"/></linearGradient>
+    <linearGradient id="gForest" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5C9A57"/><stop offset="1" stop-color="#22401F"/></linearGradient>
+    <linearGradient id="gSun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE9A8"/><stop offset="1" stop-color="#E6A93A"/></linearGradient>
+    <linearGradient id="gCoral" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFC2B0"/><stop offset="1" stop-color="#E9705A"/></linearGradient>
+    <linearGradient id="gPaper" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#DCE8DF"/></linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <symbol id="leaf" viewBox="0 0 120 50"><path d="M2 25C30-6 90-6 118 25 90 56 30 56 2 25Z"/><path d="M8 25H110" fill="none" stroke="rgba(0,0,0,.18)" stroke-width="2"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 3H6v18h12V7z"/><path d="M14 3v4h4"/><path d="M9 12h6M9 16h6"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 10v7M8 7v.01M12 17v-7M12 13a3 3 0 0 1 6 0v4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.5-7-12a7 7 0 0 1 14 0c0 5.5-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></symbol>
+  <symbol id="i-caret" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M12 4v12M6 11l6 6 6-6M5 20h14"/></symbol>
+  <symbol id="i-out" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9"/><path d="M18 14v6H4V6h6"/></symbol>
+  <symbol id="i-up" viewBox="0 0 24 24"><path d="m6 15 6-6 6 6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-1.5 7 5-3 5 3-1.5-7"/></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><path d="m2 9 10-5 10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5"/><path d="M22 9v6"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5M19 19v2H6"/></symbol>
+  <symbol id="i-bulb" viewBox="0 0 24 24"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2V16h5v-.1c0-.8.4-1.5 1-2A6 6 0 0 0 12 3z"/></symbol>
+  <symbol id="i-cursor" viewBox="0 0 24 24"><path d="m4 3 7 18 2.5-7.5L21 11z"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4"/><path d="m12 8 1.5 2.5L16 12l-2.5 1.5L12 16l-1.5-2.5L8 12l2.5-1.5z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16"/><rect x="7" y="12" width="3" height="5" rx="1"/><rect x="12" y="8" width="3" height="9" rx="1"/><rect x="17" y="5" width="3" height="12" rx="1"/></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-8-4.6-8-10.5A4.5 4.5 0 0 1 12 7a4.5 4.5 0 0 1 8 2.5C20 15.4 12 20 12 20z"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.7 3.8 9S14.5 18.3 12 21c-2.5-2.7-3.8-5.7-3.8-9S9.5 5.7 12 3z"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><circle cx="9" cy="10" r="2"/><path d="m21 16-5-5-9 9"/></symbol>
+  <symbol id="i-present" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M12 16v4M8 20h8"/><path d="m8 12 3-3 2 2 3-3"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"/><path d="m3 13 9 5 9-5"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></symbol>
+  <symbol id="i-cycle" viewBox="0 0 24 24"><path d="M20 12a8 8 0 0 1-14 5.3M4 12A8 8 0 0 1 18 6.7"/><path d="M18 3v4h-4M6 21v-4h4"/></symbol>
+  <symbol id="i-back" viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h10a6 6 0 0 1 0 12h-3"/></symbol>
+  <symbol id="i-puzzle" viewBox="0 0 24 24"><path d="M10 4a2 2 0 1 1 4 0v2h4v4h-2a2 2 0 1 0 0 4h2v4h-4v-2a2 2 0 1 0-4 0v2H6v-4h2a2 2 0 1 0 0-4H6V6h4z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c1-3.5 3.5-5 6.5-5s5.5 1.5 6.5 5"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14.5c2.5 0 4.5 1.5 5.5 4"/></symbol>
+  <symbol id="i-access" viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="1.8"/><path d="M5 8l7 1.5L19 8M12 9.5V14l-3 7M12 14l3 7"/></symbol>
+  <symbol id="i-steps" viewBox="0 0 24 24"><path d="M4 20h4v-4h4v-4h4V8h4"/><path d="M17 4h3v3"/></symbol>
+  <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-ladder" viewBox="0 0 24 24"><path d="M3 21h18"/><rect x="4" y="15" width="4" height="6"/><rect x="10" y="10" width="4" height="11"/><rect x="16" y="4" width="4" height="17"/></symbol>
+  <symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l4-1L19 8a2.1 2.1 0 0 0-3-3L5 16z"/><path d="M14 7l3 3"/></symbol>
+  <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="11" rx="2"/><path d="M2 19h20"/></symbol>
+  <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+  <symbol id="i-headset" viewBox="0 0 24 24"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9z"/></symbol>
+  <symbol id="i-checklist" viewBox="0 0 24 24"><path d="m4 6 1.5 1.5L8 5M4 12l1.5 1.5L8 11M4 18l1.5 1.5L8 17"/><path d="M11 6h9M11 12h9M11 18h9"/></symbol>
+  <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></symbol>
+  <symbol id="i-brief" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5h6v2"/><path d="M3 12h18"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l12-7.5z"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#home"><span class="clay k-forest"><span>DS</span></span>Diti Jay Shah</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav"><svg class="icon"><use href="#i-menu"/></svg>Menu</button>
+    <nav class="site-nav" id="siteNav" aria-label="Main">
+      <ul class="menu">
+        <li><a href="#home" data-nav="home">Home</a></li>
+        <li><a href="#about" data-nav="about">About<svg class="icon caret"><use href="#i-caret"/></svg></a>
+          <ul class="sub">
+            <li><a href="#bio"><span class="clay k-mint"><svg class="icon"><use href="#i-user"/></svg></span>Bio</a></li>
+            <li><a href="#goal-statement"><span class="clay k-sage"><svg class="icon"><use href="#i-target"/></svg></span>Goal Statement</a></li>
+          </ul></li>
+        <li><a href="#resume" data-nav="resume">Resume<svg class="icon caret"><use href="#i-caret"/></svg></a>
+          <ul class="sub">
+            <li><a href="#education"><span class="clay k-olive"><svg class="icon"><use href="#i-cap"/></svg></span>Education Summary</a></li>
+            <li><a href="#download-resume"><span class="clay k-forest"><svg class="icon"><use href="#i-down"/></svg></span>Download Resume</a></li>
+          </ul></li>
+        <li><a href="#program" data-nav="program">Program of Study</a></li>
+        <li><a href="#portfolio" data-nav="portfolio">Portfolio<svg class="icon caret"><use href="#i-caret"/></svg></a>
+          <ul class="sub">
+            <li><a href="#projects"><span class="clay k-mint"><svg class="icon"><use href="#i-laptop"/></svg></span>Projects &amp; eLearning</a></li>
+            <li><a href="#case-studies"><span class="clay k-forest"><svg class="icon"><use href="#i-book"/></svg></span>Case Studies</a></li>
+            <li><a href="#skills"><span class="clay k-sun"><svg class="icon"><use href="#i-star"/></svg></span>Skills &amp; Competencies</a></li>
+            <li><a href="#design-rationale"><span class="clay k-olive"><svg class="icon"><use href="#i-puzzle"/></svg></span>Design Rationale</a></li>
+            <li><a href="#executive-summary"><span class="clay k-forest"><svg class="icon"><use href="#i-book"/></svg></span>Executive Summary</a></li>
+            <li><a href="#about-portfolio"><span class="clay k-sage"><svg class="icon"><use href="#i-compass"/></svg></span>About This Portfolio</a></li>
+          </ul></li>
+        <li><a href="#research" data-nav="research">Research</a></li>
+        <li><a href="#journey" data-nav="journey">Journey at UTampa<svg class="icon caret"><use href="#i-caret"/></svg></a>
+          <ul class="sub"><li><a href="#photos"><span class="clay k-mint"><svg class="icon"><use href="#i-image"/></svg></span>Photos</a></li></ul></li>
+        <li><a href="#internship" data-nav="internship">Internship<svg class="icon caret"><use href="#i-caret"/></svg></a>
+          <ul class="sub"><li><a href="#netwolves"><span class="clay k-forest"><svg class="icon"><use href="#i-brief"/></svg></span>Vaso Technology (NetWolves)</a></li></ul></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ================= HOME ================= -->
+<section class="page" id="home" data-page="home">
+  <div class="hero">
+    <svg class="art" viewBox="0 0 1200 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <circle cx="1080" cy="130" r="70" fill="#A7F0DD" opacity=".12"/>
+      <circle cx="140" cy="170" r="38" fill="#9CAC54" opacity=".18"/>
+      <path d="M0 600C220 520 380 660 600 610S980 500 1200 570V900H0Z" fill="#97CD97" opacity=".1"/>
+      <g fill="#97CD97" opacity=".55"><use href="#leaf" width="170" height="70" transform="translate(-30 540) rotate(-35)"/><use href="#leaf" width="140" height="58" transform="translate(30 640) rotate(-12)"/><use href="#leaf" width="120" height="50" transform="translate(110 500) rotate(-60)"/></g>
+      <g fill="#9CAC54" opacity=".6"><use href="#leaf" width="160" height="66" transform="translate(-20 450) rotate(-70)"/><use href="#leaf" width="120" height="50" transform="translate(150 620) rotate(-25)"/></g>
+      <g fill="#A7F0DD" opacity=".35"><use href="#leaf" width="180" height="74" transform="translate(1210 540) rotate(215)"/><use href="#leaf" width="140" height="58" transform="translate(1180 670) rotate(190)"/><use href="#leaf" width="120" height="50" transform="translate(1090 500) rotate(240)"/></g>
+      <g fill="#97CD97" opacity=".5"><use href="#leaf" width="150" height="62" transform="translate(1230 430) rotate(250)"/><use href="#leaf" width="110" height="46" transform="translate(1060 640) rotate(200)"/></g>
+      <g fill="#A7F0DD" opacity=".5"><circle cx="300" cy="120" r="3"/><circle cx="920" cy="260" r="3"/><circle cx="220" cy="380" r="2.5"/><circle cx="1000" cy="420" r="2.5"/><circle cx="760" cy="90" r="2"/></g>
+    </svg>
+    <div class="wrap">
+      <div class="eyebrow-row">
+        <span class="pill"><svg class="icon"><use href="#i-cap"/></svg>M.S. Instructional Design &amp; Technology</span>
+        <span class="pill"><svg class="icon"><use href="#i-pin"/></svg>University of Tampa</span>
+      </div>
+      <div class="stage">
+        <div class="halo"></div>
+        <div class="arch"><img src="images/diti-headshot.jpg" alt="Portrait of Diti Jay Shah" width="477" height="507"></div>
+        <span class="clay sticker s1 k-sun" aria-hidden="true"><svg class="icon"><use href="#i-bulb"/></svg></span>
+        <span class="clay sticker s2 k-mint" aria-hidden="true"><svg class="icon"><use href="#i-cursor"/></svg></span>
+        <span class="clay sticker s3 k-olive" aria-hidden="true"><svg class="icon"><use href="#i-book"/></svg></span>
+        <span class="clay sticker s4 k-sage" aria-hidden="true"><svg class="icon"><use href="#i-spark"/></svg></span>
+      </div>
+      <h1 class="name">Diti Jay Shah</h1>
+      <span class="outline">Instructional Designer</span>
+      <p class="role">&amp; Learning Experience Designer</p>
+      <div class="cta">
+        <a class="btn mint" href="#projects">See My Work</a>
+        <button type="button" class="btn ghost" data-intro><svg class="icon"><use href="#i-play"/></svg>Watch My Introduction</button>
+      </div>
+      <div class="strip" aria-label="Featured work">
+        <div class="strip-track" id="strip"></div>
+      </div>
+    </div>
+  </div>
+  <div class="wrap chapters" id="chapters"></div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="page" id="about" data-page="about" hidden>
+  <div class="band"><div class="wrap">
+    <div><span class="eyebrow">About</span><h1>Educator, designer, <em>lifelong learner</em></h1></div>
+    <svg class="ill" data-ill="hello" aria-hidden="true"></svg>
+  </div></div>
+  <div class="wrap">
+    <div class="block" id="bio">
+      <div class="about-grid">
+        <div>
+          <div class="sec-head"><span class="clay k-sun"><svg class="icon"><use href="#i-heart"/></svg></span><h2>A Bit about Diti</h2></div>
+          <div class="prose">
+            <p>Diti Jay Shah is a Learning and Development professional with experience in education, instructional design, and professional training since 2008. Her career spans higher education, corporate learning, and diverse educational settings, where she has designed and supported engaging learning experiences for adult learners.</p>
+          </div>
+          <div class="chips">
+            <span class="chip"><span class="clay k-mint"><svg class="icon"><use href="#i-puzzle"/></svg></span>Instructional Design</span>
+            <span class="chip"><span class="clay k-sage"><svg class="icon"><use href="#i-users"/></svg></span>Adult Learning</span>
+            <span class="chip"><span class="clay k-olive"><svg class="icon"><use href="#i-laptop"/></svg></span>eLearning Development</span>
+            <span class="chip"><span class="clay k-forest"><svg class="icon"><use href="#i-checklist"/></svg></span>Project Management</span>
+            <span class="chip"><span class="clay k-sun"><svg class="icon"><use href="#i-steps"/></svg></span>Professional Development</span>
+          </div>
+          <button type="button" class="intro-video" data-intro><span class="thumb"><img src="media/meet-diti-poster.jpg" alt=""><span class="pbtn"><svg class="icon"><use href="#i-play"/></svg></span></span><span><b>Watch my introduction</b><small>30-second AI video, made with HeyGen</small></span></button>
+          <details class="more"><summary><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span>Read more</summary>
+            <div class="prose"><p>Her areas of expertise include instructional design, adult learning, eLearning development, project management, and professional development. She is passionate about creating practical, learner-centered experiences that use technology thoughtfully to make learning meaningful, accessible, and engaging.</p></div>
+          </details>
+        </div>
+        <div class="bw-arch">
+          <div class="frame"><img src="images/diti-headshot.jpg" alt="Black-and-white portrait of Diti Jay Shah" width="477" height="507"></div>
+          <span class="tag-float">In education since 2008</span>
+        </div>
+      </div>
+    </div>
+    <div class="block" id="goal-statement">
+      <div class="sec-head"><span class="clay k-olive"><svg class="icon"><use href="#i-target"/></svg></span><h2>Professional Goals Statement</h2></div>
+      <p class="sec-sub">Finding inspiration in every turn.</p>
+      <div class="prose">
+        <p>As I approach graduation from the Master of Science in Instructional Design and Technology program at the University of Tampa, my professional goal is to pursue opportunities as an Instructional Designer, Learning Experience Designer, or Learning and Development Specialist in corporate training, higher education, or educational technology.</p>
+      </div>
+      <div class="grid">
+        <div class="card tile"><svg class="ill" data-ill="brief" style="width:84px;height:84px" aria-hidden="true"></svg><h3>Corporate Training</h3></div>
+        <div class="card tile"><svg class="ill" data-ill="cap" style="width:84px;height:84px" aria-hidden="true"></svg><h3>Higher Education</h3></div>
+        <div class="card tile"><svg class="ill" data-ill="chip" style="width:84px;height:84px" aria-hidden="true"></svg><h3>Educational Technology</h3></div>
+      </div>
+      <details class="more"><summary><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span>Read more</summary>
+        <div class="prose"><p>With a professional background spanning teaching, adult education, corporate learning, and instructional design since 2008, I bring a diverse perspective to creating meaningful learning experiences. My graduate studies have strengthened my expertise in instructional design, technology integration, multimedia development, assessment, and learner-centered approaches. I consider instructional planning, adult learning, and content development among my strongest competencies, while continuing to advance my skills in learning analytics, accessibility, and AI-supported learning.</p></div>
+      </details>
+      <a class="btn ghost" style="margin-top:18px" href="https://drive.google.com/file/d/1trwc3tjHUrarIz8-sD8XQhWZ6LpuNOQ-FVXpoTHstaw/view" target="_blank" rel="noopener"><svg class="icon"><use href="#i-file"/></svg>Read the full Goals Statement</a>
+      <div class="direction"><span class="clay k-forest"><svg class="icon"><use href="#i-compass"/></svg></span><div><h3>My Professional Direction</h3><p>My goal is to continue growing as an instructional designer and learning experience design professional, creating innovative, accessible, and evidence-informed learning solutions for educational institutions and organizations.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESUME ================= -->
+<section class="page" id="resume" data-page="resume" hidden>
+  <div class="band mint"><div class="wrap">
+    <div><span class="eyebrow">Resume</span><h1>Education &amp; <em>credentials</em></h1></div>
+    <svg class="ill" data-ill="cap" aria-hidden="true"></svg>
+  </div></div>
+  <div class="wrap">
+    <div class="block" id="education">
+      <div class="sec-head"><span class="clay k-olive"><svg class="icon"><use href="#i-cap"/></svg></span><h2>Education Summary</h2></div>
+      <ol class="timeline">
+        <li><span class="clay k-forest"><svg class="icon"><use href="#i-laptop"/></svg></span><span class="yr">Current</span><div><h3>M.S. Instructional Design &amp; Technology</h3><p>University of Tampa · Fall 2025 – Fall 2026 · 40 credit hours</p></div></li>
+        <li><span class="clay k-mint"><svg class="icon"><use href="#i-globe"/></svg></span><span class="yr">2023</span><div><h3>M.Ed. Adult Education &amp; Community Development</h3><p>Collaborative Specialization in Comparative, International, and Development Education · OISE, University of Toronto</p></div></li>
+        <li><span class="clay k-sun"><svg class="icon"><use href="#i-award"/></svg></span><span class="yr">2019</span><div><h3>TESOL Certificate</h3><p>University of Toronto</p></div></li>
+        <li><span class="clay k-sage"><svg class="icon"><use href="#i-users"/></svg></span><span class="yr">2013</span><div><h3>Bachelor of Education (B.Ed.)</h3></div></li>
+        <li><span class="clay k-olive"><svg class="icon"><use href="#i-book"/></svg></span><span class="yr">2008</span><div><h3>M.A. English Literature</h3><p>Gujarat University, India</p></div></li>
+        <li><span class="clay k-mint"><svg class="icon"><use href="#i-pen"/></svg></span><span class="yr">2006</span><div><h3>B.A. English Literature</h3><p>Gujarat University, India</p></div></li>
+      </ol>
+      <details class="more"><summary><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span>Read the full summary</summary>
+        <div class="prose"><p>She holds a Master of Education in Adult Education and Community Development with a collaborative specialization in Comparative, International, and Development Education from the Ontario Institute for Studies in Education, University of Toronto (2023). She is currently pursuing a Master of Science in Instructional Design and Technology at the University of Tampa. Diti also completed a Bachelor of Education (2013) and earned both a Master of Arts (2008) and a Bachelor of Arts (2006) in English Literature from Gujarat University, India. Additionally, she is certified in Teaching English to Speakers of Other Languages (TESOL) from the University of Toronto (2019).</p></div>
+      </details>
+    </div>
+    <div class="block" id="download-resume">
+      <div class="download-card on-dark">
+        <svg class="ill" data-ill="doc" aria-hidden="true"></svg>
+        <div><h3>Download Resume</h3><p style="color:#D8E6D5;font-size:14.5px;margin-top:4px">View Diti's full resume online or download it as a Word document.</p>
+          <div class="row">
+            <a class="btn mint" href="https://drive.google.com/file/d/1zxqJTcbJUDExA06ED5Or7ENEFr795R2_/view" target="_blank" rel="noopener"><svg class="icon"><use href="#i-eye"/></svg>View Resume</a>
+            <a class="btn ghost" href="https://drive.usercontent.google.com/download?id=1zxqJTcbJUDExA06ED5Or7ENEFr795R2_&export=download" target="_blank" rel="noopener"><svg class="icon"><use href="#i-down"/></svg>Download (Word)</a>
+            <a class="btn ghost" href="files/Diti-Jay-Shah-Portfolio-Summary.pdf" target="_blank" rel="noopener"><svg class="icon"><use href="#i-file"/></svg>One-Page Summary</a>
+          </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROGRAM OF STUDY ================= -->
+<section class="page" id="program" data-page="program" hidden>
+  <div class="band mint"><div class="wrap">
+    <div><span class="eyebrow">Program of Study</span><h1>M.S. Instructional Design <em>&amp; Technology</em></h1>
+      <p class="lede">The University of Tampa · Fall 2025 – Fall 2026. Twelve courses that took me from learning theory and research to systematic design, games and simulations, AI, change management and a field internship. I completed 40 credit hours, four more than the 36 the program requires.</p></div>
+    <svg class="ill" data-ill="cap" aria-hidden="true"></svg>
+  </div></div>
+  <div class="wrap">
+    <div class="pos-stats">
+      <div><b>40</b><span>Total credit hours</span></div>
+      <div><b>24</b><span>Core credits</span></div>
+      <div><b>16</b><span>Elective credits</span></div>
+      <div><b>12</b><span>Courses, incl. internship</span></div>
+    </div>
+    <div class="block" id="courses" style="padding-top:36px">
+      <div class="sec-head"><span class="clay k-forest"><svg class="icon"><use href="#i-book"/></svg></span><h2>Courses</h2></div>
+      <div class="course-grid" id="courseGrid"></div>
+    </div>
+    <div class="block" id="course-table">
+      <div class="sec-head"><span class="clay k-olive"><svg class="icon"><use href="#i-checklist"/></svg></span><h2>At a Glance</h2></div>
+      <div class="table-wrap"><table class="pos-table">
+        <thead><tr><th>Course</th><th>Title</th><th>Instructor</th><th>Type</th><th>Credits</th><th>Work in this portfolio</th></tr></thead>
+        <tbody id="courseRows"></tbody>
+        <tfoot><tr><td colspan="4">Core 24 · Elective 16 · Internship 0</td><td>40</td><td></td></tr></tfoot>
+      </table></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PORTFOLIO ================= -->
+<section class="page" id="portfolio" data-page="portfolio" hidden>
+  <div class="band olive"><div class="wrap">
+    <div><span class="eyebrow">Instructional Design Project Showcase</span>
+      <h1>Designing meaningful learning <em>through innovation, technology &amp; research</em></h1>
+      <p class="lede">Throughout my degree program, I accomplished a variety of project tasks relating to project management, curriculum design, research, and more! I invite you to take a look at my work below to see how I have implemented my skillset to bring my ideas into reality.</p></div>
+    <svg class="ill" data-ill="easel" aria-hidden="true"></svg>
+  </div></div>
+  <nav class="jumpbar" aria-label="Portfolio sections"><div class="wrap">
+    <a href="#projects">Projects <span class="count" id="projCount"></span></a>
+    <a href="#case-studies">Case Studies</a>
+    <a href="#skills">Skills</a>
+    <a href="#design-rationale">Design Rationale</a>
+    <a href="#executive-summary">Executive Summary</a>
+    <a href="#about-portfolio">About This Portfolio</a>
+  </div></nav>
+  <div class="wrap">
+    <!-- Work first -->
+    <div class="block" id="projects">
+      <div class="sec-head"><span class="clay k-mint"><svg class="icon"><use href="#i-laptop"/></svg></span><h2>eLearning Modules &amp; Projects</h2></div>
+      <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+      <div class="grid" id="projectGrid"></div>
+    </div>
+
+    <!-- Case studies -->
+    <div class="block" id="case-studies">
+      <div class="sec-head"><span class="clay k-forest"><svg class="icon"><use href="#i-book"/></svg></span><h2>Case Studies</h2></div>
+      <p class="sec-sub">The thinking behind the work: problem, learners, design decisions and results.</p>
+      <div class="stack">
+
+        <details class="fold cs" id="cs-principal"><summary><span class="clay k-forest"><svg class="icon"><use href="#i-users"/></svg></span><div><h3>A Principal's First Year: Riverside Academy</h3><small>EME 607 · Branching leadership simulation</small></div><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="inner">
+            <div class="cs-top"><svg class="ill" data-ill="school" aria-hidden="true"></svg><p>A game-based simulation in which learners step into the role of a newly appointed principal at Riverside Secondary (850 students, Grades 6–12) and lead through a full school year: <b>4 missions and 20 branching scenes</b> where every decision shifts four live measures: staff morale, engagement, academic performance and trust.</p></div>
+            <dl class="cs-grid">
+              <div><dt>Instructional problem</dt><dd>New principals must build relational trust and make high-stakes decisions in their first weeks, yet rarely get a safe place to practice before facing real staff, parents and data. This simulation offers a risk-free rehearsal of those first-year moments.</dd></div>
+              <div><dt>Target learners &amp; context</dt><dd>Aspiring and newly appointed school leaders. Works self-paced, or facilitated in a group using the built-in presenter mode with audience voting.</dd></div>
+              <div><dt>My role</dt><dd>Instructional designer and developer for EME 607: scenario writing, branching structure, research-based feedback and interface design.</dd></div>
+              <div><dt>Scope</dt><dd>Four missions across the school year: <em>First Days</em> (September), <em>The Data Drop</em> (November), <em>Crisis Week</em> (February) and <em>The Final Push</em> (May), with nine characters, mission debriefs and a completion certificate.</dd></div>
+              <div class="wide"><dt>Learning objectives</dt><dd><ol>
+                <li>Choose listening-first strategies that build relational trust with experienced staff.</li>
+                <li>Present school data transparently and respond to staff concerns collaboratively.</li>
+                <li>Select high-impact supports, such as observation and co-planning, for struggling first-year teachers.</li>
+                <li>Respond personally and promptly to parent and community concerns.</li>
+                <li>Reflect on how leadership decisions affect morale, engagement, achievement and trust.</li></ol></dd></div>
+              <div class="wide"><dt>Design process &amp; frameworks</dt><dd><b>Scenario-based learning</b> with three choices per scene and visible consequences. <b>Andragogy</b>: realistic, job-embedded problems for adult professionals. <b>Gagné's events</b>: a story hook gains attention, each choice gives practice with immediate feedback, and debriefs assess and support transfer. Every option's feedback cites what leadership research says about that move, and reflection prompts close each mission.</dd></div>
+              <div><dt>Tools &amp; technologies</dt><dd>Interactive web simulation (HTML, CSS, JavaScript) built with generative AI support (Claude), including sound, keyboard shortcuts and presenter controls.</dd></div>
+              <div><dt>Evaluation &amp; results</dt><dd>Built in: four live metrics, a decision log and leadership profile after each mission, and a final score with certificate. <span class="todo">To add: instructor or peer feedback</span></dd></div>
+              <div class="wide"><dt>Reflection &amp; lessons learned</dt><dd><span class="todo">To add: 2–3 sentences on what you learned designing this simulation</span></dd></div>
+            </dl>
+            <a class="btn" href="https://claude.ai/artifact/KsS7dJncY5wpvcWb3fs2hC" target="_blank" rel="noopener">Open the Simulation<svg class="icon"><use href="#i-out"/></svg></a>
+          </div></details>
+
+        <details class="fold cs" id="cs-branched"><summary><span class="clay k-sage"><svg class="icon"><use href="#i-target"/></svg></span><div><h3>Branched Scenario Quiz: Workplace Professionalism</h3><small>Articulate Storyline · Scenario-based assessment</small></div><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="inner">
+            <div class="cs-top"><img src="images/sl-branched.jpg" alt="Title screen of the Articulate Storyline Scenario Quiz" class="cs-shot"><p>A five-question scenario quiz that places learners in realistic workplace situations: an angry customer demanding a manager, an urgent task that collides with a deadline, a coworker's error in a client report, a complaint about incorrect information, and a project at risk of running late.</p></div>
+            <dl class="cs-grid">
+              <div><dt>Instructional problem</dt><dd>Soft skills such as accountability, communication and customer empathy are hard to teach through content alone. Learners need to practice judgment and see the consequences of their choices.</dd></div>
+              <div><dt>Target learners &amp; context</dt><dd>New and early-career employees in customer-facing or team-based roles, as part of onboarding or professional-skills training.</dd></div>
+              <div><dt>My role</dt><dd><span class="todo">To confirm: your role (for example, scenario writer and Storyline developer)</span></dd></div>
+              <div><dt>Scope</dt><dd>Eight slides, about 5 minutes: name entry, five scenario questions, and a results slide with pass/fail paths and a retry option.</dd></div>
+              <div class="wide"><dt>Learning objectives</dt><dd><ol>
+                <li>De-escalate an upset customer with empathy and ownership before deciding to escalate.</li>
+                <li>Negotiate competing priorities with a manager instead of abandoning or ignoring work.</li>
+                <li>Address a coworker's mistake privately and constructively.</li>
+                <li>Take accountability for incorrect information given to a customer.</li>
+                <li>Communicate deadline risks early and propose a revised plan.</li></ol></dd></div>
+              <div class="wide"><dt>Design process &amp; frameworks</dt><dd>Each question offers one best response and two plausible distractors, so learners must <b>apply and analyze</b> rather than recall (Bloom). Every choice leads to consequence feedback explaining <em>why</em>, following Gagné's practice-and-feedback events. A personalized greeting, progress meter and score tracking keep learners oriented.</dd></div>
+              <div><dt>Tools &amp; technologies</dt><dd>Articulate Storyline 360: variables, triggers, text entry, branching feedback layers and a results slide.</dd></div>
+              <div><dt>Evaluation &amp; results</dt><dd>Built-in scoring (maximum 5, passing 2) with pass/fail feedback and retry. <span class="todo">To add: learner or instructor feedback</span></dd></div>
+              <div class="wide"><dt>Reflection &amp; lessons learned</dt><dd><span class="todo">To add: what you learned building branching logic and writing distractors</span></dd></div>
+            </dl>
+            <button type="button" class="btn" data-play="0">Play Module<svg class="icon"><use href="#i-play"/></svg></button>
+          </div></details>
+
+        <details class="fold cs" id="cs-holiday"><summary><span class="clay k-sun"><svg class="icon"><use href="#i-globe"/></svg></span><div><h3>Holiday Traditions of the World</h3><small>Articulate Storyline · Narrated microlearning</small></div><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="inner">
+            <div class="cs-top"><img src="images/sl-holiday.jpg" alt="Illustrated holiday scene from Holiday Traditions of the World" class="cs-shot"><p>An illustrated, narrated microlearning experience that takes learners on a swipe-through tour of celebrations around the world, from Germany and India to Mexico, Italy, Japan and the United States, with quick knowledge checks along the way.</p></div>
+            <dl class="cs-grid">
+              <div><dt>Instructional purpose</dt><dd>Build cultural awareness and curiosity about global traditions in a short, engaging format that learners can complete on any device.</dd></div>
+              <div><dt>Target learners &amp; context</dt><dd>Learners exploring cultural diversity, suitable for upper-elementary through adult audiences, in a self-paced setting.</dd></div>
+              <div><dt>My role</dt><dd><span class="todo">To confirm: your role</span></dd></div>
+              <div><dt>Scope</dt><dd>A single interactive scene with audio narration, swipe navigation and multiple knowledge checks.</dd></div>
+              <div class="wide"><dt>Learning objectives</dt><dd><ol>
+                <li>Match well-known festivals, such as Diwali and Oktoberfest, to the countries that celebrate them.</li>
+                <li>Recall distinctive customs, such as Mexico's radish carvings and Italy's Epiphany Eve gift-giver.</li>
+                <li>Describe how holiday traditions reflect each culture's values and history.</li></ol></dd></div>
+              <div class="wide"><dt>Design process &amp; frameworks</dt><dd><b>Mayer's multimedia principles</b>: narration paired with illustrations instead of on-screen text blocks. <b>UDL</b>: audio, visuals and touch-friendly swipe gestures offer multiple means of engagement. Immediate "Try again" feedback lets learners correct mistakes as they go.</dd></div>
+              <div><dt>Tools &amp; technologies</dt><dd>Articulate Storyline 360, audio narration, illustrated assets and mobile swipe gestures.</dd></div>
+              <div><dt>Evaluation &amp; results</dt><dd>Knowledge checks with immediate feedback. <span class="todo">To add: learner or instructor feedback</span></dd></div>
+              <div class="wide"><dt>Reflection &amp; lessons learned</dt><dd><span class="todo">To add: your reflection</span></dd></div>
+            </dl>
+            <button type="button" class="btn" data-play="1">Play Module<svg class="icon"><use href="#i-play"/></svg></button>
+          </div></details>
+
+      </div>
+    </div>
+
+    <div class="block" id="skills">
+      <div class="sec-head"><span class="clay k-sun"><svg class="icon"><use href="#i-star"/></svg></span><h2>Skills &amp; Competencies</h2></div>
+      <div class="skills-panel" id="skillsPanel"></div>
+    </div>
+
+    <div class="block" id="design-rationale">
+      <div class="sec-head"><span class="clay k-olive"><svg class="icon"><use href="#i-puzzle"/></svg></span><h2>Design Rationale</h2></div>
+      <p class="sec-sub">The frameworks behind my work. Tap + to see how I use each one.</p>
+      <div class="grid" id="frameworks"></div>
+      <details class="more"><summary><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span>How the frameworks work together &amp; references</summary>
+        <div class="prose">
+          <p>ADDIE and the Kemp model provide the overall process. Backward design and Bloom's taxonomy set measurable outcomes and the evidence for them. Andragogy, UDL and Gagné's events shape the learning experience itself, while Mayer's principles and WCAG guide how content looks and works. Kirkpatrick's levels close the loop by measuring impact. Together they keep objectives, activities, technology and assessment aligned around the learner.</p>
+          <ul class="refs">
+            <li>Anderson, L. W., &amp; Krathwohl, D. R. (Eds.). (2001). <em>A taxonomy for learning, teaching, and assessing: A revision of Bloom's taxonomy of educational objectives</em>. Longman.</li>
+            <li>Branch, R. M. (2009). <em>Instructional design: The ADDIE approach</em>. Springer.</li>
+            <li>CAST. (2024). <em>Universal Design for Learning guidelines</em> (Version 3.0). https://udlguidelines.cast.org</li>
+            <li>Gagné, R. M., Wager, W. W., Golas, K. C., &amp; Keller, J. M. (2005). <em>Principles of instructional design</em> (5th ed.). Wadsworth.</li>
+            <li>Kirkpatrick, J. D., &amp; Kirkpatrick, W. K. (2016). <em>Kirkpatrick's four levels of training evaluation</em>. ATD Press.</li>
+            <li>Knowles, M. S., Holton, E. F., III, &amp; Swanson, R. A. (2015). <em>The adult learner</em> (8th ed.). Routledge.</li>
+            <li>Mayer, R. E. (2020). <em>Multimedia learning</em> (3rd ed.). Cambridge University Press.</li>
+            <li>Morrison, G. R., Ross, S. M., Morrison, J. R., &amp; Kalman, H. K. (2019). <em>Designing effective instruction</em> (8th ed.). Wiley.</li>
+            <li>W3C. (2018). <em>Web Content Accessibility Guidelines (WCAG) 2.1</em>. https://www.w3.org/TR/WCAG21/</li>
+            <li>Wiggins, G., &amp; McTighe, J. (2005). <em>Understanding by design</em> (Expanded 2nd ed.). ASCD.</li>
+          </ul>
+        </div>
+      </details>
+    </div>
+
+    <!-- Executive Summary -->
+    <div class="block" id="executive-summary">
+      <div class="sec-head"><span class="clay k-forest"><svg class="icon"><use href="#i-book"/></svg></span><h2>Executive Summary</h2></div>
+      <div class="quote" style="margin-top:24px"><span class="mark" aria-hidden="true">“</span><p>Designing with purpose. Innovating with creativity. Empowering learners through meaningful experiences.</p></div>
+      <div class="download-card on-dark" style="background:var(--olive-soft);color:var(--ink)">
+        <svg class="ill" data-ill="doc" aria-hidden="true"></svg>
+        <div><h3 style="color:var(--forest-deep)">One-Page Portfolio Summary</h3><p style="color:var(--muted);font-size:14.5px;margin-top:4px">Strengths, key projects, education and skills on a single page.</p>
+          <div class="row"><a class="btn" href="files/Diti-Jay-Shah-Portfolio-Summary.pdf" target="_blank" rel="noopener"><svg class="icon"><use href="#i-down"/></svg>Open Summary (PDF)</a></div></div>
+      </div>
+      <div class="stack">
+        <details class="fold"><summary><span class="clay k-mint"><svg class="icon"><use href="#i-user"/></svg></span><div><h3>Designing Meaningful Learning Experiences Through Innovation, Technology, and Research</h3><small>Who I am and what this portfolio represents</small></div><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="inner prose">
+            <p>I am Diti Jay Shah, an educator, Learning and Development professional, and emerging instructional designer with over a decade of experience across educational, corporate, and professional training environments. My professional journey, combined with my Master of Science in Instructional Design and Technology at the University of Tampa, has strengthened my ability to design engaging, accessible, and learner-centered educational experiences.</p>
+            <p>This portfolio represents the intersection of my professional experience, academic learning, creativity, and commitment to continuous improvement. It showcases my ability to transform instructional challenges into meaningful learning solutions by integrating learning theories, instructional design frameworks, emerging technologies, and evidence-informed practices.</p>
+          </div></details>
+        <details class="fold"><summary><span class="clay k-sage"><svg class="icon"><use href="#i-layers"/></svg></span><div><h3>Five Core Areas of Professional Competency</h3><small>How my work is organized</small></div><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="inner prose">
+            <p>My work is organized around five core areas of professional competency:</p>
+            <p>1. <b>Instructional Design and Learning Development:</b> Designing structured learning experiences through needs analysis, measurable learning objectives, instructional strategies, and assessment planning.</p>
+            <p>2. <b>Interactive eLearning and Multimedia Development:</b> Creating engaging digital learning experiences using tools such as Articulate Rise 360, Storyline 360, and multimedia technologies to encourage active participation and knowledge application.</p>
+            <p>3. <b>Technology Integration and Innovation:</b> Exploring artificial intelligence, immersive learning environments, and other emerging technologies to enhance learner engagement, accessibility, and personalized learning opportunities.</p>
+            <p>4. <b>Research and Evaluation:</b> Applying educational research methods, data collection strategies, and evaluation principles to support informed instructional decisions and continuous improvement.</p>
+            <p>5. <b>Professional Learning and Development:</b> Connecting instructional design principles with real-world organizational training needs, informed by my experience in corporate learning and professional development.</p>
+          </div></details>
+        <details class="fold"><summary><span class="clay k-olive"><svg class="icon"><use href="#i-puzzle"/></svg></span><div><h3>Frameworks, Projects &amp; Growth</h3><small>ADDIE, backward design, UDL and my journey at UTampa</small></div><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="inner prose">
+            <p>Throughout my work, I draw upon established instructional design approaches, including ADDIE, backward design, adult learning principles, and Universal Design for Learning (UDL). These frameworks guide my approach to aligning learning objectives, instructional activities, technology, and assessment while considering the diverse needs of learners.</p>
+            <p>The featured projects demonstrate my growing expertise in interactive learning design, scenario-based instruction, multimedia development, research, and technology-enhanced education. Each artifact reflects an opportunity to apply theoretical knowledge, develop practical skills, and evaluate how instructional choices contribute to meaningful learning experiences.</p>
+            <p>My academic journey at the University of Tampa has further shaped my professional identity by encouraging innovation, critical reflection, collaboration, and research-informed design.</p>
+          </div></details>
+        <details class="fold"><summary><span class="clay k-sun"><svg class="icon"><use href="#i-target"/></svg></span><div><h3>My Professional Goal</h3><small>Where I am heading next</small></div><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="inner prose">
+            <p>My professional goal is to contribute as an instructional designer or learning experience design professional, developing innovative, inclusive, and effective learning solutions for educational institutions and organizations.</p>
+            <p>Ultimately, this portfolio is more than a collection of academic projects. It reflects my evolution as an educator and learning designer, my commitment to lifelong learning, and my belief that thoughtful instructional design can make learning more accessible, engaging, and impactful.</p>
+          </div></details>
+      </div>
+    </div>
+
+    <!-- About this portfolio -->
+    <div class="block" id="about-portfolio">
+      <div class="sec-head"><span class="clay k-sage"><svg class="icon"><use href="#i-compass"/></svg></span><h2>About This Portfolio</h2></div>
+      <div class="stack">
+        <details class="fold"><summary><span class="clay k-mint"><svg class="icon"><use href="#i-spark"/></svg></span><div><h3>Welcome to My Portfolio</h3><small>My strengths and interests</small></div><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="inner prose">
+            <p>This portfolio represents both my professional capabilities and my continued commitment to designing learning experiences that are engaging, purposeful, and relevant to diverse learners.</p>
+            <p>Welcome to my professional portfolio! I am Diti Jay Shah, an educator, learning and development professional, and instructional designer with over a decade of experience across educational and corporate environments. My academic journey, including my Master of Science in Instructional Design and Technology at the University of Tampa, has strengthened my ability to combine instructional strategies, emerging technologies, and learner-centered approaches to create meaningful learning experiences.</p>
+            <p>My professional strengths lie in instructional design, interactive eLearning development, technology integration, adult learning, and learning evaluation. I enjoy transforming complex information into accessible, engaging, and practical learning experiences. My work reflects an interest in scenario-based learning, gamification, multimedia instruction, and the thoughtful integration of artificial intelligence into educational environments.</p>
+          </div></details>
+        <details class="fold"><summary><span class="clay k-sage"><svg class="icon"><use href="#i-layers"/></svg></span><div><h3>What You Will Find in This Portfolio</h3><small>Five areas of competency</small></div><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="inner prose">
+            <p>This portfolio is organized around the core competencies I have developed through graduate coursework, professional experience, and instructional design projects.</p>
+            <p><b>Instructional Design and Learning Development:</b> Projects demonstrating how I organize content, establish learning objectives, and apply instructional strategies to create effective learning experiences.</p>
+            <p><b>Interactive eLearning and Multimedia:</b> Learning modules, simulations, and digital activities developed using tools such as Articulate Rise 360, Storyline 360, Genially, and other educational technologies.</p>
+            <p><b>Technology Integration and Innovation:</b> Examples of how I explore emerging technologies, including AI-supported tools, to enhance learner engagement and instructional development.</p>
+            <p><b>Research and Evaluation:</b> Academic projects demonstrating my understanding of educational research, data collection, assessment, and the evaluation of learning experiences.</p>
+            <p><b>Professional Learning and Development:</b> Workplace training resources and instructional projects that connect learning theory with real-world organizational needs.</p>
+          </div></details>
+        <details class="fold"><summary><span class="clay k-olive"><svg class="icon"><use href="#i-eye"/></svg></span><div><h3>My Professional Vision</h3><small>Growing into L&amp;D leadership</small></div><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="inner prose">
+            <p>Through this portfolio, I aim to demonstrate how my experience as an educator, corporate learning professional, and instructional designer has shaped my ability to develop creative, inclusive, and effective learning solutions.</p>
+            <p>My long-term goal is to grow into a Learning and Development leadership role, where I can combine instructional innovation, emerging technologies, and strategic thinking to improve learning experiences and organizational performance.</p>
+          </div></details>
+        <details class="fold"><summary><span class="clay k-forest"><svg class="icon"><use href="#i-checklist"/></svg></span><div><h3>Key Competencies and Portfolio Evidence</h3><small>How each project proves a skill</small></div><span class="plus"><svg class="icon"><use href="#i-plus"/></svg></span></summary>
+          <div class="inner prose">
+            <p><b>Instructional Design and Learning Experience Development:</b> Projects such as <em>Universal Design Foundations</em> and <em>Support Materials and Visualization</em> demonstrate my ability to apply instructional design principles, organize learning content, and create structured learning experiences.</p>
+            <p><b>Educational Technology and Interactive Learning:</b> Projects such as <em>Correlational Designs</em>, <em>Quantitative Data</em>, <em>Emotional Intelligence</em>, <em>Teaching and Learning at a Distance</em>, my Canva presentations and infographics, my podcast and recorded-session video, and the <em>360° Virtual Visit to the Taj Mahal</em> showcase my ability to integrate technology, gamification, storytelling, and scenario-based learning to encourage active participation.</p>
+            <p><b>Adult Learning and Professional Training:</b> My experience in education and corporate learning, complemented by training materials developed during my NetWolves internship, demonstrates my ability to design practical, performance-focused learning solutions for diverse adult audiences.</p>
+            <p><b>Multimedia Design and Accessibility:</b> My interactive modules, infographics, and digital learning resources reflect my ability to communicate complex information through thoughtful visual design, accessible content organization, and engaging multimedia.</p>
+            <p><b>Research, Assessment, and Emerging Technologies:</b> My graduate research on AI-supported personalized learning, along with instructional assessments and evaluation projects, demonstrates my commitment to evidence-informed design, continuous improvement, and responsible technology integration.</p>
+            <p>Each featured artifact includes a brief annotation describing its purpose, instructional design decisions, and the professional competencies it demonstrates.</p>
+          </div></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESEARCH ================= -->
+<section class="page" id="research" data-page="research" hidden>
+  <div class="band mint"><div class="wrap">
+    <div><span class="eyebrow">Educational Research</span><h1>Research that <em>informs design</em></h1></div>
+    <svg class="ill" data-ill="flask" aria-hidden="true"></svg>
+  </div></div>
+  <div class="wrap">
+    <div class="block" id="study">
+      <div class="study">
+        <div><span class="eyebrow">Research Project · In Progress</span>
+          <h2>AI-Supported Personalized Learning in Higher Education: Students' Perceptions of Engagement and Learning Experiences</h2></div>
+        <svg class="ill" data-ill="chip" aria-hidden="true"></svg>
+      </div>
+      <div class="grid" id="researchGrid"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JOURNEY ================= -->
+<section class="page" id="journey" data-page="journey" hidden>
+  <div class="band olive"><div class="wrap">
+    <div><span class="eyebrow">Journey at UTampa</span><h1>Moments from <em>the M.S. program</em></h1><p class="lede">Here are some highlights of Diti's journey at UTampa:</p></div>
+    <div class="logo-card round"><img src="images/utampa-logo.png" alt="The University of Tampa Spartans logo" width="148" height="148"></div>
+  </div></div>
+  <div class="wrap"><div id="photos" class="gallery"></div></div>
+</section>
+
+<!-- ================= INTERNSHIP ================= -->
+<section class="page" id="internship" data-page="internship" hidden>
+  <div class="band"><div class="wrap">
+    <div><span class="eyebrow">Internship Experience</span><h1>Learning &amp; Development <em>at NetWolves</em></h1>
+      <div class="facts">
+        <span class="chip"><span class="clay k-forest"><svg class="icon"><use href="#i-brief"/></svg></span>Vaso Technology (NetWolves)</span>
+        <span class="chip"><span class="clay k-mint"><svg class="icon"><use href="#i-user"/></svg></span>Intern, Learning and Development</span>
+        <span class="chip"><span class="clay k-sun"><svg class="icon"><use href="#i-star"/></svg></span>May 2026 – August 2026</span>
+      </div></div>
+    <div class="logo-card"><img src="images/netwolves-logo.jpg" alt="NetWolves logo: Connectivity &amp; Peace of Mind" width="940" height="492"></div>
+  </div></div>
+  <div class="wrap">
+    <div class="block" id="netwolves">
+      <div class="prose" style="margin-top:0">
+        <p>As a Learning and Development intern at Vaso Technology (NetWolves), Diti applied instructional design principles to real workplace training needs, creating resources that help employees learn processes and perform them consistently.</p>
+      </div>
+      <div class="quotes">
+        <figure class="quote"><span class="mark" aria-hidden="true">“</span><span class="tagline">Professional Value &amp; Expertise</span><p>Diti's thoughtful approach to project organization and design, coupled with her strong collaboration skills and adaptability, make her an outstanding candidate.</p><figcaption class="who"><span class="avatar">JL</span><span><b>Dr. Janet Laine</b><small>Sr. Manager, Training and Development</small></span></figcaption></figure>
+        <figure class="quote"><span class="mark" aria-hidden="true">“</span><span class="tagline">Professional Endorsement</span><p>I am confident that Diti would be a valuable addition to any e-learning or instructional design team.</p><figcaption class="who"><span class="avatar">JL</span><span><b>Dr. Janet Laine</b><small>Sr. Manager, Training and Development</small></span></figcaption></figure>
+      </div>
+      <div class="sec-head" style="margin-top:56px"><span class="clay k-forest"><svg class="icon"><use href="#i-checklist"/></svg></span><h2>Key Responsibilities</h2></div>
+      <div class="grid">
+        <div class="card tile"><svg class="ill" data-ill="book" style="width:84px;height:84px" aria-hidden="true"></svg><h3>Instructional Design &amp; Course Enhancement</h3><p>Enhanced two existing training courses to improve learner engagement, strengthen content delivery, and reinforce learning outcomes.</p></div>
+        <div class="card tile"><svg class="ill" data-ill="doc" style="width:84px;height:84px" aria-hidden="true"></svg><h3>Training Material Development</h3><p>Designed job aids and process documentation to support sales training initiatives, transforming video-based training content into accessible, practical learning resources.</p></div>
+        <div class="card tile"><svg class="ill" data-ill="spark" style="width:84px;height:84px" aria-hidden="true"></svg><h3>AI-Enhanced Visual Learning</h3><p>Leveraged generative AI to improve existing training presentations by incorporating learner-friendly graphics and visuals, enhancing content clarity and engagement.</p></div>
+      </div>
+      <div class="sec-head" style="margin-top:56px"><span class="clay k-olive"><svg class="icon"><use href="#i-layers"/></svg></span><h2>Training Materials &amp; Job Aids</h2></div>
+      <div class="grid materials">
+        <div class="card tile"><span class="clay k-mint"><svg class="icon"><use href="#i-book"/></svg></span><span class="n">01</span><h3>Course Enhancement Materials</h3><p>Updated instructional content for two existing training courses.</p></div>
+        <div class="card tile"><span class="clay k-sage"><svg class="icon"><use href="#i-steps"/></svg></span><span class="n">02</span><h3>Sales Training Process Guide</h3><p>Step-by-step process documentation developed from video-based training.</p></div>
+        <div class="card tile"><span class="clay k-olive"><svg class="icon"><use href="#i-present"/></svg></span><span class="n">03</span><h3>Training Presentation Materials</h3><p>Enhanced presentation slides featuring AI-assisted graphics and visuals.</p></div>
+        <div class="card tile"><span class="clay k-sun"><svg class="icon"><use href="#i-eye"/></svg></span><span class="n">04</span><h3>Visual Learning Resources</h3><p>Learner-friendly graphics and visual aids designed to support understanding and knowledge retention.</p></div>
+      </div>
+      <div class="sec-head" style="margin-top:56px"><span class="clay k-sun"><svg class="icon"><use href="#i-star"/></svg></span><h2>Skills Applied</h2></div>
+      <div class="badges" style="margin-top:20px">
+        <span class="skill-badge">Training Development</span><span class="skill-badge">Job Aids</span><span class="skill-badge">Knowledge Management</span><span class="skill-badge">User Account Management</span><span class="skill-badge">Ticket Monitoring</span><span class="skill-badge">Incident Response</span><span class="skill-badge">Troubleshooting</span><span class="skill-badge">Customer Service</span>
+      </div>
+      <div class="cert">
+        <button type="button" id="certBtn" aria-label="Enlarge internship certificate"><img src="images/internship-certificate.jpg" alt="Certificate of Achievement presented to Diti Shah by NetWolves for successful completion of the Training and Development Internship Program, August 6, 2026" width="1400" height="1082"></button>
+        <div><span class="clay k-sun"><svg class="icon"><use href="#i-award"/></svg></span><h3 style="margin-top:14px;font-size:1.5rem">Certificate of Achievement</h3><p style="color:var(--muted);margin-top:6px">Awarded for successful completion of the Training and Development Internship Program at NetWolves, August 6, 2026.</p>
+          <a class="btn" style="margin-top:16px" href="https://drive.google.com/file/d/1aEoTzHfmFJo11eAZL4EFrik2eS_4kP16/view" target="_blank" rel="noopener">Open Original<svg class="icon"><use href="#i-out"/></svg></a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="page" id="contact" data-page="contact" hidden>
+  <div class="band mint"><div class="wrap">
+    <div><span class="eyebrow">Contact</span><h1>Let's <em>connect</em></h1>
+      <p class="lede">Currently, Diti is pursuing new opportunities to apply her learning and development expertise in organizational leadership and capability building. She resides in Land O' Lakes, Florida.</p></div>
+    <svg class="ill" data-ill="mail" aria-hidden="true"></svg>
+  </div></div>
+  <div class="wrap">
+    <div class="block">
+      <div class="contact-grid">
+        <div class="contact-card"><span class="clay k-mint"><svg class="icon"><use href="#i-phone"/></svg></span><span class="label">Phone</span><span class="val"><a href="tel:+18137647925">813-764-7925</a></span><button class="copy" data-copy="813-764-7925">Copy</button></div>
+        <div class="contact-card"><span class="clay k-sun"><svg class="icon"><use href="#i-mail"/></svg></span><span class="label">Email</span><span class="val"><a href="mailto:ditishah1202@gmail.com">ditishah1202@gmail.com</a></span><button class="copy" data-copy="ditishah1202@gmail.com">Copy</button></div>
+        <div class="contact-card"><span class="clay k-forest"><svg class="icon"><use href="#i-linkedin"/></svg></span><span class="label">LinkedIn</span><span class="val"><a href="https://www.linkedin.com/in/diti-jay-shah-0515ab28/" target="_blank" rel="noopener">diti-jay-shah-0515ab28</a></span><a class="copy" href="https://www.linkedin.com/in/diti-jay-shah-0515ab28/" target="_blank" rel="noopener">Open profile</a></div>
+        <div class="contact-card"><span class="clay k-olive"><svg class="icon"><use href="#i-pin"/></svg></span><span class="label">Location</span><span class="val">Land O' Lakes, Florida</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<dialog class="player" id="introDlg" aria-label="Meet Diti: introduction video">
+  <div class="bar"><h3>Meet Diti Jay Shah</h3><a href="https://drive.google.com/file/d/1JjfX2c7hlwfKhe4ZfFtKJLy9nkkHy05Y/view" target="_blank" rel="noopener">Open in Google Drive</a><button type="button" id="introClose" aria-label="Close video"><svg class="icon"><use href="#i-x"/></svg></button></div>
+  <video id="introVideo" controls playsinline preload="none" poster="media/meet-diti-poster.jpg"><source src="media/meet-diti.mp4" type="video/mp4"></video>
+</dialog>
+<dialog class="player" id="mediaDlg" aria-labelledby="mediaTitle">
+  <div class="bar"><h3 id="mediaTitle">Media</h3><a id="mediaOut" href="#" target="_blank" rel="noopener">Open in Google Drive</a><button type="button" id="mediaClose" aria-label="Close"><svg class="icon"><use href="#i-x"/></svg></button></div>
+  <div id="mediaBox"></div>
+</dialog>
+<dialog class="player" id="player" aria-labelledby="playerTitle">
+  <div class="bar"><h3 id="playerTitle">Module</h3><a id="playerOut" href="#" target="_blank" rel="noopener">Open in new tab</a><button type="button" id="playerClose" aria-label="Close module"><svg class="icon"><use href="#i-x"/></svg></button></div>
+  <iframe id="playerFrame" title="Articulate Storyline module" src="about:blank" allow="autoplay; fullscreen"></iframe>
+</dialog>
+<dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+  <button class="close" id="lbClose" aria-label="Close"><svg class="icon"><use href="#i-x"/></svg></button>
+  <img id="lbImg" alt="">
+  <p id="lbCap"></p>
+</dialog>
+
+<footer class="site-footer">
+  <svg viewBox="0 0 1200 200" preserveAspectRatio="xMidYMid slice" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%">
+    <g fill="#345C32"><use href="#leaf" width="160" height="66" transform="translate(1100 220) rotate(-120)"/><use href="#leaf" width="120" height="50" transform="translate(1180 160) rotate(-150)"/></g>
+  </svg>
+  <div class="wrap">
+    <div><div class="sig">Diti Jay Shah</div><span>© 2026 · Instructional Designer &amp; Learning Experience Designer</span></div>
+    <div class="foot-icons">
+      <a class="clay k-mint" href="tel:+18137647925" aria-label="Phone"><svg class="icon"><use href="#i-phone"/></svg></a>
+      <a class="clay k-sun" href="mailto:ditishah1202@gmail.com" aria-label="Email"><svg class="icon"><use href="#i-mail"/></svg></a>
+      <a class="clay k-sage" href="https://www.linkedin.com/in/diti-jay-shah-0515ab28/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"/></svg></a>
+    </div>
+    <a class="to-top" href="#top" id="toTop">Back to top<svg class="icon"><use href="#i-up"/></svg></a>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" hidden></div>
+
+<script>
+(function () {
+  /* ---------- Illustrations: small "clay" scenes, 120x120, built from shared gradients ---------- */
+  const SH = '<ellipse cx="60" cy="106" rx="34" ry="6" fill="#22401F" opacity=".22" filter="url(#soft)"/>';
+  const HL = (x, y, w, h) => '<rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h + '" rx="' + h / 2 + '" fill="#fff" opacity=".55"/>';
+  const ILL = {
+    scatter: SH + '<rect x="20" y="18" width="80" height="80" rx="14" fill="url(#gPaper)" transform="rotate(-6 60 58)"/>' +
+      '<g transform="rotate(-6 60 58)"><path d="M32 30v56h56" stroke="#345C32" stroke-width="4" fill="none" stroke-linecap="round"/><path d="M38 80 84 38" stroke="#9CAC54" stroke-width="3" stroke-dasharray="4 5" stroke-linecap="round"/>' +
+      '<circle cx="44" cy="72" r="6" fill="url(#gMint)"/><circle cx="54" cy="64" r="5" fill="url(#gSun)"/><circle cx="64" cy="58" r="6" fill="url(#gSage)"/><circle cx="72" cy="47" r="5" fill="url(#gCoral)"/><circle cx="82" cy="42" r="6" fill="url(#gMint)"/></g>',
+    bars: SH + '<path d="M22 98h76" stroke="#345C32" stroke-width="4" stroke-linecap="round"/>' +
+      '<path d="M28 98V62l8-5h14v41z" fill="url(#gSage)"/><path d="M28 62l8-5h14l-8 5z" fill="#E4F5E2"/><rect x="28" y="62" width="14" height="36" fill="url(#gSage)"/><path d="M42 62l8-5v41l-8 0z" fill="#5E9A5E"/>' +
+      '<rect x="52" y="44" width="14" height="54" fill="url(#gOlive)"/><path d="M52 44l8-5h14l-8 5z" fill="#EEF2CF"/><path d="M66 44l8-5v59h-8z" fill="#6E7D2E"/>' +
+      '<rect x="76" y="26" width="14" height="72" fill="url(#gForest)"/><path d="M76 26l8-5h14l-8 5z" fill="#8CC487"/><path d="M90 26l8-5v77h-8z" fill="#1B3318"/>' +
+      '<circle cx="90" cy="14" r="7" fill="url(#gSun)"/>' + HL(88, 10, 4, 3),
+    heart: SH + '<path d="M60 96S22 74 22 46a18 18 0 0 1 38-8 18 18 0 0 1 38 8c0 28-38 50-38 50z" fill="url(#gCoral)"/>' + HL(32, 36, 16, 7) +
+      '<rect x="68" y="14" width="40" height="28" rx="12" fill="url(#gMint)"/><path d="M78 40l-4 10 12-8z" fill="#7FDCC4"/><circle cx="80" cy="28" r="3" fill="#22401F"/><circle cx="88" cy="28" r="3" fill="#22401F"/><circle cx="96" cy="28" r="3" fill="#22401F"/>',
+    globe: SH + '<rect x="18" y="24" width="84" height="58" rx="10" fill="url(#gForest)"/><rect x="24" y="30" width="72" height="46" rx="6" fill="#2A4B28"/>' +
+      '<path d="M10 86h100l-8 12H18z" fill="url(#gPaper)"/><circle cx="60" cy="53" r="19" fill="url(#gMint)"/><path d="M41 53h38M60 34c6 6 8 12 8 19s-2 13-8 19c-6-6-8-12-8-19s2-13 8-19z" stroke="#345C32" stroke-width="2.5" fill="none"/>' + HL(48, 38, 10, 4) +
+      '<circle cx="92" cy="22" r="8" fill="url(#gSun)"/>',
+    infog: SH + '<rect x="30" y="16" width="56" height="80" rx="10" fill="url(#gOlive)" transform="rotate(8 58 56)"/><rect x="24" y="14" width="56" height="82" rx="10" fill="url(#gPaper)"/>' +
+      '<circle cx="52" cy="40" r="16" fill="url(#gMint)"/><path d="M52 40V24a16 16 0 0 1 15 21z" fill="url(#gSun)"/><path d="M52 40l15 5a16 16 0 0 1-9 10z" fill="url(#gCoral)"/>' +
+      '<rect x="34" y="64" width="36" height="6" rx="3" fill="#97CD97"/><rect x="34" y="75" width="26" height="6" rx="3" fill="#9CAC54"/><rect x="34" y="86" width="31" height="5" rx="2.5" fill="#A7F0DD"/>',
+    easel: SH + '<path d="M40 100 52 72M80 100 68 72M60 72v30" stroke="#7D5A3C" stroke-width="5" stroke-linecap="round"/>' +
+      '<rect x="18" y="20" width="84" height="56" rx="8" fill="url(#gPaper)" stroke="#345C32" stroke-width="3"/>' +
+      '<path d="M28 64l16-14 12 8 20-22 14 10" stroke="#345C32" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>' +
+      '<circle cx="76" cy="36" r="5" fill="url(#gSun)"/><rect x="26" y="28" width="22" height="5" rx="2.5" fill="#9CAC54"/><circle cx="60" cy="14" r="5" fill="url(#gForest)"/>',
+    poster: SH + '<rect x="30" y="10" width="60" height="88" rx="12" fill="url(#gForest)"/><rect x="36" y="18" width="48" height="72" rx="6" fill="url(#gPaper)"/>' +
+      '<rect x="42" y="24" width="36" height="14" rx="4" fill="url(#gMint)"/><circle cx="48" cy="50" r="6" fill="url(#gSun)"/><rect x="58" y="46" width="20" height="4" rx="2" fill="#97CD97"/><rect x="58" y="53" width="14" height="4" rx="2" fill="#97CD97"/>' +
+      '<circle cx="48" cy="70" r="6" fill="url(#gCoral)"/><rect x="58" y="66" width="20" height="4" rx="2" fill="#9CAC54"/><rect x="58" y="73" width="14" height="4" rx="2" fill="#9CAC54"/>',
+    taj: SH + '<circle cx="60" cy="56" r="36" fill="url(#gSun)" opacity=".9"/>' +
+      '<rect x="24" y="44" width="6" height="52" rx="3" fill="url(#gPaper)"/><rect x="90" y="44" width="6" height="52" rx="3" fill="url(#gPaper)"/><circle cx="27" cy="42" r="5" fill="#fff"/><circle cx="93" cy="42" r="5" fill="#fff"/>' +
+      '<rect x="36" y="64" width="48" height="32" fill="url(#gPaper)"/><path d="M42 64c0-14 8-22 18-26 10 4 18 12 18 26z" fill="#fff"/><path d="M60 38v-10" stroke="#fff" stroke-width="3" stroke-linecap="round"/>' +
+      '<path d="M54 96V82a6 6 0 0 1 12 0v14z" fill="#97CD97"/>' +
+      '<ellipse cx="60" cy="66" rx="54" ry="16" fill="none" stroke="#A7F0DD" stroke-width="5" stroke-dasharray="80 14"/><path d="M106 72l8 0-4 8z" fill="#A7F0DD"/>',
+    slides: SH + '<rect x="26" y="16" width="70" height="48" rx="8" fill="url(#gSage)" transform="rotate(-8 61 40)"/><rect x="18" y="28" width="80" height="56" rx="8" fill="url(#gPaper)" stroke="#345C32" stroke-width="3"/>' +
+      '<rect x="28" y="38" width="30" height="6" rx="3" fill="#345C32"/><rect x="28" y="50" width="22" height="5" rx="2.5" fill="#9CAC54"/><rect x="28" y="60" width="26" height="5" rx="2.5" fill="#9CAC54"/><circle cx="76" cy="56" r="14" fill="url(#gMint)"/><path d="M71 49v14l12-7z" fill="#22401F"/>',
+    slides2: SH + '<rect x="20" y="22" width="80" height="56" rx="8" fill="url(#gForest)"/><rect x="26" y="28" width="68" height="44" rx="5" fill="url(#gPaper)"/>' +
+      '<rect x="32" y="56" width="10" height="10" rx="2" fill="url(#gSage)"/><rect x="46" y="48" width="10" height="18" rx="2" fill="url(#gOlive)"/><rect x="60" y="40" width="10" height="26" rx="2" fill="url(#gSun)"/><rect x="74" y="34" width="10" height="32" rx="2" fill="url(#gMint)"/>' +
+      '<path d="M60 78v14M48 96h24" stroke="#345C32" stroke-width="5" stroke-linecap="round"/>',
+    branch: SH + '<path d="M60 30v20M60 50 34 74M60 50l26 24M34 74v14M86 74v14" stroke="#345C32" stroke-width="4" fill="none" stroke-linecap="round"/>' +
+      '<rect x="44" y="12" width="32" height="22" rx="8" fill="url(#gForest)"/><circle cx="60" cy="50" r="9" fill="url(#gSun)"/>' +
+      '<rect x="18" y="66" width="32" height="18" rx="8" fill="url(#gMint)"/><rect x="70" y="66" width="32" height="18" rx="8" fill="url(#gSage)"/>' +
+      '<circle cx="34" cy="94" r="7" fill="url(#gOlive)"/><circle cx="86" cy="94" r="7" fill="url(#gCoral)"/>' + HL(50, 16, 12, 4),
+    mic: SH + '<path d="M22 46a12 12 0 0 0 0 20M14 40a22 22 0 0 0 0 32M98 46a12 12 0 0 1 0 20M106 40a22 22 0 0 1 0 32" stroke="#A7F0DD" stroke-width="4" fill="none" stroke-linecap="round"/>' +
+      '<path d="M38 52a22 22 0 0 0 44 0" stroke="#345C32" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M60 74v18M46 96h28" stroke="#345C32" stroke-width="6" stroke-linecap="round"/>' +
+      '<rect x="44" y="12" width="32" height="54" rx="16" fill="url(#gForest)"/><path d="M48 30h24M48 38h24M48 46h24" stroke="#8CC487" stroke-width="2.5" stroke-linecap="round"/>' + HL(50, 16, 6, 14),
+    video: SH + '<rect x="14" y="26" width="92" height="64" rx="14" fill="url(#gForest)"/><rect x="20" y="32" width="80" height="44" rx="8" fill="#2A4B28"/>' +
+      '<circle cx="60" cy="54" r="16" fill="url(#gSun)"/><path d="M55 46v16l13-8z" fill="#22401F"/><rect x="22" y="82" width="76" height="4" rx="2" fill="#5C9A57"/><rect x="22" y="82" width="34" height="4" rx="2" fill="#A7F0DD"/><circle cx="56" cy="84" r="4.5" fill="#fff"/>' +
+      '<path d="M22 26l10-12 14 4-10 12z" fill="url(#gMint)"/><path d="M46 18l14 4" stroke="#22401F" stroke-width="3"/>',
+    doc: SH + '<path d="M30 12h40l20 20v66a6 6 0 0 1-6 6H30a6 6 0 0 1-6-6V18a6 6 0 0 1 6-6z" fill="url(#gPaper)"/><path d="M70 12v20h20z" fill="#BFE0C2"/>' +
+      '<rect x="34" y="42" width="40" height="5" rx="2.5" fill="#345C32"/><rect x="34" y="54" width="44" height="4" rx="2" fill="#97CD97"/><rect x="34" y="64" width="36" height="4" rx="2" fill="#97CD97"/><rect x="34" y="74" width="40" height="4" rx="2" fill="#97CD97"/>' +
+      '<circle cx="84" cy="84" r="14" fill="url(#gSun)"/><path d="M78 84l4 4 8-8" stroke="#22401F" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>',
+    lens: SH + '<rect x="18" y="18" width="58" height="76" rx="10" fill="url(#gPaper)"/><rect x="28" y="32" width="36" height="5" rx="2.5" fill="#345C32"/><rect x="28" y="44" width="30" height="4" rx="2" fill="#97CD97"/><rect x="28" y="54" width="34" height="4" rx="2" fill="#97CD97"/>' +
+      '<path d="M84 80l16 16" stroke="#345C32" stroke-width="9" stroke-linecap="round"/><circle cx="72" cy="66" r="20" fill="url(#gMint)" opacity=".92" stroke="#345C32" stroke-width="5"/>' + HL(62, 54, 10, 5),
+    bridge: SH + '<path d="M10 82h100" stroke="#345C32" stroke-width="6" stroke-linecap="round"/><path d="M22 82V44M98 82V44" stroke="url(#gForest)" stroke-width="8" stroke-linecap="round"/>' +
+      '<path d="M22 46c16 0 22 22 38 22s22-22 38-22" stroke="#9CAC54" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M38 82V60M50 82V66M60 82V68M70 82V66M82 82V60" stroke="#97CD97" stroke-width="3"/>' +
+      '<circle cx="22" cy="34" r="10" fill="url(#gMint)"/><circle cx="98" cy="34" r="10" fill="url(#gSun)"/><path d="M18 34h8M94 30v8" stroke="#22401F" stroke-width="3" stroke-linecap="round"/><path d="M94 34h8" stroke="#22401F" stroke-width="3" stroke-linecap="round"/>',
+    flask: SH + '<path d="M48 14h24M52 14v26L28 88a8 8 0 0 0 7 12h50a8 8 0 0 0 7-12L68 40V14" fill="url(#gPaper)" stroke="#345C32" stroke-width="4" stroke-linejoin="round"/>' +
+      '<path d="M37 72h46l9 18a5 5 0 0 1-4 7H32a5 5 0 0 1-4-7z" fill="url(#gMint)"/><circle cx="50" cy="84" r="4" fill="#fff" opacity=".8"/><circle cx="64" cy="78" r="3" fill="#fff" opacity=".8"/><circle cx="84" cy="22" r="6" fill="url(#gSun)"/><circle cx="96" cy="36" r="4" fill="url(#gSage)"/>',
+    chip: SH + '<rect x="28" y="26" width="64" height="64" rx="14" fill="url(#gForest)"/><rect x="42" y="40" width="36" height="36" rx="8" fill="url(#gMint)"/>' +
+      '<path d="M44 18v8M60 18v8M76 18v8M44 90v8M60 90v8M76 90v8M20 42h8M20 58h8M20 74h8M92 42h8M92 58h8M92 74h8" stroke="#9CAC54" stroke-width="4" stroke-linecap="round"/>' +
+      '<path d="M60 48l3 6 6 3-6 3-3 6-3-6-6-3 6-3z" fill="#22401F"/>' + HL(34, 30, 14, 4),
+    cap: SH + '<path d="M60 22 12 44l48 22 48-22z" fill="url(#gForest)"/><path d="M28 54v20c18 14 46 14 64 0V54L60 68z" fill="url(#gSage)"/>' +
+      '<path d="M100 48v26" stroke="#E6A93A" stroke-width="4" stroke-linecap="round"/><circle cx="100" cy="78" r="6" fill="url(#gSun)"/>' + HL(44, 32, 18, 4),
+    brief: SH + '<rect x="16" y="38" width="88" height="58" rx="12" fill="url(#gOlive)"/><path d="M46 38v-8a6 6 0 0 1 6-6h16a6 6 0 0 1 6 6v8" stroke="#345C32" stroke-width="5" fill="none"/>' +
+      '<path d="M16 60h88" stroke="#6E7D2E" stroke-width="3"/><rect x="52" y="54" width="16" height="12" rx="3" fill="url(#gSun)"/>' + HL(24, 42, 22, 5),
+    spark: SH + '<path d="M56 16c4 22 10 28 32 32-22 4-28 10-32 32-4-22-10-28-32-32 22-4 28-10 32-32z" fill="url(#gSun)"/>' +
+      '<path d="M90 64c2 10 5 13 15 15-10 2-13 5-15 15-2-10-5-13-15-15 10-2 13-5 15-15z" fill="url(#gMint)"/><circle cx="26" cy="86" r="7" fill="url(#gSage)"/>' + HL(48, 40, 8, 4),
+    book: SH + '<path d="M60 30C48 20 30 20 16 24v64c14-4 32-4 44 6 12-10 30-10 44-6V24c-14-4-32-4-44 6z" fill="url(#gPaper)" stroke="#345C32" stroke-width="3.5" stroke-linejoin="round"/>' +
+      '<path d="M60 30v64" stroke="#345C32" stroke-width="3.5"/><path d="M26 40c8-2 18-2 26 2M26 52c8-2 18-2 26 2M68 42c8-4 18-4 26-2M68 54c8-4 18-4 26-2" stroke="#97CD97" stroke-width="3" stroke-linecap="round" fill="none"/>' +
+      '<path d="M84 18v26l6-5 6 5V18z" fill="url(#gCoral)"/>',
+    camera: SH + '<rect x="12" y="34" width="96" height="62" rx="14" fill="url(#gForest)"/><path d="M38 34l8-12h28l8 12z" fill="url(#gOlive)"/>' +
+      '<circle cx="60" cy="64" r="22" fill="url(#gPaper)"/><circle cx="60" cy="64" r="14" fill="url(#gMint)"/><circle cx="60" cy="64" r="6" fill="#22401F"/>' + HL(50, 54, 8, 4) + '<circle cx="94" cy="46" r="5" fill="url(#gSun)"/>',
+    mail: SH + '<rect x="14" y="30" width="92" height="64" rx="12" fill="url(#gPaper)" stroke="#345C32" stroke-width="3.5"/><path d="M16 36l44 32 44-32" stroke="#345C32" stroke-width="3.5" fill="none" stroke-linejoin="round"/>' +
+      '<path d="M86 10c-6 0-10 4-10 9 0 7 10 13 10 13s10-6 10-13c0-5-4-9-10-9z" fill="url(#gCoral)"/><circle cx="24" cy="20" r="6" fill="url(#gSun)"/>',
+    school: SH + '<rect x="18" y="50" width="84" height="48" rx="4" fill="url(#gPaper)"/><path d="M12 54 60 26l48 28z" fill="url(#gOlive)"/>' +
+      '<rect x="52" y="70" width="16" height="28" rx="3" fill="url(#gForest)"/><rect x="26" y="62" width="16" height="14" rx="3" fill="url(#gMint)"/><rect x="78" y="62" width="16" height="14" rx="3" fill="url(#gMint)"/>' +
+      '<circle cx="60" cy="44" r="7" fill="url(#gSun)"/><path d="M60 26V8" stroke="#345C32" stroke-width="3" stroke-linecap="round"/><path d="M61 9h18l-5 5 5 5H61z" fill="url(#gCoral)"/>',
+    hello: SH + '<circle cx="60" cy="40" r="20" fill="url(#gSun)"/><path d="M26 98c4-22 18-32 34-32s30 10 34 32z" fill="url(#gForest)"/>' + HL(52, 26, 10, 5) +
+      '<rect x="82" y="12" width="32" height="22" rx="10" fill="url(#gMint)"/><path d="M90 32l-4 8 10-6z" fill="#7FDCC4"/><path d="M92 23h12" stroke="#22401F" stroke-width="3" stroke-linecap="round"/>' +
+      '<path d="M14 60c10-6 12-14 10-24 8 6 10 14 6 24z" fill="url(#gSage)"/>'
+  };
+  const ill = (name) => '<svg class="ill" viewBox="0 0 120 120" aria-hidden="true">' + (ILL[name] || '') + '</svg>';
+  document.querySelectorAll("svg[data-ill]").forEach(s => { s.setAttribute("viewBox", "0 0 120 120"); s.innerHTML = ILL[s.dataset.ill] || ""; });
+
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const icon = id => '<svg class="icon"><use href="#' + id + '"/></svg>';
+  const el = (tag, cls, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (html != null) e.innerHTML = html; return e; };
+
+  /* ---------- Projects ---------- */
+  const projects = [
+    { t: "Correlational Designs", tool: "Articulate 360", cat: "elearning", ill: "scatter", bg: "p-mint", url: "https://share.articulate.com/U9YrV_NlYC4jFs-pJwrJA", d: "Reading relationships between variables, one short interactive lesson at a time." },
+    { t: "Quantitative Data", tool: "Articulate 360", cat: "elearning", ill: "bars", bg: "p-sage", url: "https://share.articulate.com/B4DHIy52JppKqotH1S-yC", d: "Collecting and interpreting numbers through visual, step-by-step practice." },
+    { t: "Emotional Intelligence", tool: "Articulate 360", cat: "elearning", ill: "heart", bg: "p-olive", url: "https://share.articulate.com/pPXRy5gGLlCORau_ONgoc", d: "Workplace scenarios that build self-awareness and empathy." },
+    { t: "Teaching and Learning at a Distance", tool: "Articulate 360", cat: "elearning", ill: "globe", bg: "p-mint", url: "https://share.articulate.com/4wRo47i4Ey3KXB0JWJgzO", d: "Principles of effective online learning, modeled in the module itself." },
+    { t: "360° Virtual Visit to the Taj Mahal", tool: "360° Immersive", cat: "immersive", ill: "taj", bg: "p-forest", url: "https://schools.360cities.net/image/img-3991-panorama", d: "Explore the Taj Mahal in an immersive 360° virtual learning experience." },
+    { t: "Ethics Podcast", tool: "Audio Podcast · 23 min", cat: "media", ill: "mic", bg: "p-sage", url: "https://drive.google.com/file/d/1JU2V50bM3mU4JP_JvAn2-mGRL4wHwH6w/view", d: "An instructional podcast episode on ethics, designed for listening on the go." },
+    { t: "Recorded Session Video", tool: "EME 613 · Video · 12 min", cat: "media", img: "media/recorded-session-poster.jpg", bg: "p-olive", url: "https://drive.google.com/file/d/18BgnOvbo-Nux-FjNb9S2m-Wx0D46NThU/view", d: "Captures an important concept of recorded sessions for asynchronous online learning experiences." },
+    { t: "Canva Infographics", tool: "Articulate 360 · Canva", cat: "visual", ill: "infog", bg: "p-mint", url: "https://360.articulate.com/review/content/ac15ce4f-3f4f-44ce-8ed3-8b6411660fc6/review", d: "Complex ideas condensed into clear visual summaries." },
+    { t: "Canva Presentation", tool: "Canva", cat: "visual", ill: "easel", bg: "p-sage", url: "https://canva.link/071zc9ggcf1q3bt", d: "A visual presentation built for live or self-paced delivery." },
+    { t: "Canva Infographic", tool: "Canva", cat: "visual", ill: "poster", bg: "p-olive", url: "https://canva.link/nhkb6uwom2e8i8h", d: "A one-page visual quick reference." },
+    { t: "Cognitive Information Processing Theory", tool: "Presentation · EME 602", cat: "visual", ill: "slides", bg: "p-mint", url: "https://drive.google.com/file/d/1czeLPoMbKyIQ-YqtWKX3oFOW86TwBXym/view", d: "How learners attend to, encode and retrieve information, and what that means for instructional design." },
+    { t: "Designing an Emotional Intelligence Learning Experience", tool: "Presentation", cat: "visual", ill: "slides2", bg: "p-sage", url: "https://drive.google.com/file/d/1LKCfVbsC01ntVP4d5OqOR5mwZrNrnFsa/view", d: "The design story behind the Emotional Intelligence learning experience." },
+    { t: "Instructional Design Document", tool: "EME 601 · Design Document", cat: "docs", ill: "doc", bg: "p-mint", url: "https://drive.google.com/file/d/14BA5omqkqksw_8OMawGjhWq0XOQluoTkSdbaLHciKX4/view", d: "A complete instructional design document: learner analysis, objectives, strategies and assessment plan." },
+    { t: "Needs Analysis Document", tool: "EME 610 · Design Document", cat: "docs", ill: "lens", bg: "p-sage", url: "https://drive.google.com/file/d/1EnB-Z_w6L4sMYENVvqFagwprr2P8UBjWwTv9lt2f454/view", d: "A needs analysis that identifies the performance gap, the learners and the context before any training is designed." },
+    { t: "Branched Scenario Quiz", tool: "Articulate Storyline", cat: "elearning", img: "images/sl-branched.jpg", bg: "p-sage", play: "storyline/branched-scenario/story.html", cs: "cs-branched", d: "A branching scenario quiz where each learner choice leads down a different path." },
+    { t: "Holiday Traditions of the World", tool: "Articulate Storyline", cat: "elearning", img: "images/sl-holiday.jpg", bg: "p-mint", play: "storyline/holiday-traditions/story.html", cs: "cs-holiday", d: "An illustrated, narrated tour of how cultures around the world celebrate." },
+    { t: "Articulate Scenario", tool: "Articulate Rise", cat: "elearning", ill: "branch", bg: "p-olive", url: "https://share.articulate.com/lclnofRfUT5A_WEjETENX", d: "A scenario-based Rise module that asks learners to make decisions and see the results." },
+    { t: "The School Principal's Training", tool: "EME 607 · Branching Simulation", cat: "immersive", ill: "school", bg: "p-forest", url: "https://claude.ai/artifact/KsS7dJncY5wpvcWb3fs2hC", cs: "cs-principal", d: "Step into a principal's shoes at Riverside Academy and lead through realistic school scenarios." }
+  ];
+  const cats = [["all", "All work"], ["elearning", "eLearning"], ["media", "Audio & Video"], ["visual", "Visual Design"], ["immersive", "Immersive"], ["docs", "Design Documents"]];
+  const pGrid = document.getElementById("projectGrid");
+  const picHtml = p => p.img ? '<div class="pic photo"><img loading="lazy" src="' + p.img + '" alt=""></div>' : '<div class="pic ' + p.bg + '">' + ill(p.ill) + '</div>';
+  const player = document.getElementById("player"), playerFrame = document.getElementById("playerFrame"), playerTitle = document.getElementById("playerTitle"), playerOut = document.getElementById("playerOut");
+  const mediaDlg = document.getElementById("mediaDlg"), mediaBox = document.getElementById("mediaBox");
+  const openMedia = p => {
+    document.getElementById("mediaTitle").textContent = p.t;
+    document.getElementById("mediaOut").href = p.drive;
+    mediaBox.innerHTML = p.media.type === "audio"
+      ? '<div class="audio-stage">' + ill("mic") + '<audio controls preload="none" src="' + p.media.src + '"></audio></div>'
+      : '<video controls playsinline preload="none" poster="' + (p.media.poster || "") + '" src="' + p.media.src + '"></video>';
+    if (mediaDlg.showModal) mediaDlg.showModal();
+    const m = mediaBox.querySelector("audio,video"); m.play().catch(() => {});
+  };
+  document.getElementById("mediaClose").addEventListener("click", () => mediaDlg.close());
+  mediaDlg.addEventListener("close", () => { mediaBox.innerHTML = ""; });
+  const openPlayer = p => { playerTitle.textContent = p.t; playerFrame.src = p.play; playerOut.href = p.play; if (player.showModal) player.showModal(); };
+  document.getElementById("playerClose").addEventListener("click", () => player.close());
+  player.addEventListener("close", () => { playerFrame.src = "about:blank"; });
+  projects.forEach(p => {
+    let action;
+    if (p.media) action = '<div class="actions"><button type="button" class="btn play">' + (p.media.type === "audio" ? "Listen" : "Watch") + icon("i-play") + '</button><a class="mini" target="_blank" rel="noopener" href="' + p.drive + '">Open in Google Drive</a></div>';
+    else if (p.play) action = '<div class="actions"><button type="button" class="btn play">Play Module' + icon("i-play") + '</button><a class="mini" target="_blank" rel="noopener" href="' + p.play + '">Open in new tab</a></div>';
+    else if (p.url) action = '<a class="btn" target="_blank" rel="noopener">View Project' + icon("i-out") + '</a>';
+    else action = '<span class="btn disabled" aria-disabled="true">Coming Soon</span>';
+    const cs = p.cs ? '<a class="cs-link" href="#' + p.cs + '">' + icon("i-book") + 'Read the case study</a>' : '';
+    const a = el("article", "card project", picHtml(p) + '<div class="body"><span class="tag">' + esc(p.tool) + '</span><h3>' + esc(p.t) + '</h3><p>' + esc(p.d) + '</p>' + cs + action + '</div>');
+    a.dataset.cat = p.cat;
+    if (p.media) a.querySelector("button.play").addEventListener("click", () => openMedia(p));
+    else if (p.play) a.querySelector("button.play").addEventListener("click", () => openPlayer(p));
+    else if (p.url) a.querySelector("a.btn").href = p.url;
+    pGrid.appendChild(a);
+  });
+  const playable = projects.filter(p => p.play);
+  document.querySelectorAll("button[data-play]").forEach(b => b.addEventListener("click", () => openPlayer(playable[+b.dataset.play])));
+  document.getElementById("projCount").textContent = projects.length;
+  const fBox = document.getElementById("filters");
+  cats.forEach(([k, label], i) => {
+    const b = el("button", "", esc(label)); b.type = "button"; b.setAttribute("aria-pressed", String(i === 0));
+    b.addEventListener("click", () => {
+      fBox.querySelectorAll("button").forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+      pGrid.querySelectorAll(".project").forEach(c => { c.hidden = !(k === "all" || c.dataset.cat === k); });
+    });
+    fBox.appendChild(b);
+  });
+
+  /* Home strip (duplicated for a seamless loop) */
+  const strip = document.getElementById("strip");
+  const stripItems = projects.filter(p => p.url || p.play || p.media).slice(0, 16);
+  [...stripItems, ...stripItems].forEach((p, i) => {
+    const a = el("a", "", picHtml(p) + '<span>' + esc(p.t) + '</span>');
+    a.href = "#projects"; if (i >= stripItems.length) { a.setAttribute("aria-hidden", "true"); a.tabIndex = -1; }
+    strip.appendChild(a);
+  });
+
+  /* Home chapters */
+  const chapters = [
+    ["#projects", "c-mint", "Chapter one", "Projects", "eLearning, audio, video and 360° work.", "globe"],
+    ["#research", "c-sage", "Chapter two", "Research", "AI-supported personalized learning.", "flask"],
+    ["#design-rationale", "c-olive", "Chapter three", "Design Rationale", "ADDIE, Backward Design, UDL and more.", "branch"],
+    ["#netwolves", "c-mint", "Chapter four", "Internship", "Learning & Development at NetWolves.", "brief"]
+  ];
+  const chBox = document.getElementById("chapters");
+  chapters.forEach(([href, cls, num, h, p, il]) => {
+    const a = el("a", "chapter " + cls, '<span class="num">' + num + '</span><h3>' + esc(h) + '</h3><p>' + esc(p) + '</p>' + ill(il));
+    a.href = href; chBox.appendChild(a);
+  });
+
+  /* Program of Study */
+  const DV = id => "https://drive.google.com/file/d/" + id + "/view";
+  const courses = [
+    ["EME 601", "Introduction to Instructional Design", 4, "i-puzzle", "k-mint",
+      "Through this course, I developed a strong foundation in instructional design principles, processes, and models.",
+      "I learned how to conduct needs assessments, analyze learner characteristics, define measurable learning objectives, and select appropriate instructional strategies. I gained an understanding of the ADDIE framework and how to apply a systematic approach to designing effective learning experiences. This course helped me recognize the importance of aligning instructional goals, learning activities, and assessments to meet learners' needs.", [["Instructional Design Document", "https://drive.google.com/file/d/14BA5omqkqksw_8OMawGjhWq0XOQluoTkSdbaLHciKX4/view"]]],
+    ["EME 602", "Theories of Learning and Cognition for Instruction", 4, "i-bulb", "k-sun",
+      "In this course, I explored how people learn and how different learning theories influence instructional design decisions.",
+      "I developed an understanding of behaviorism, cognitivism, constructivism, motivation, and cognitive processes such as memory and knowledge retention. I learned how to translate these theories into practical instructional strategies that encourage engagement, critical thinking, and meaningful learning. This course strengthened my ability to design learning experiences grounded in evidence-based learning principles.",
+      [["Theory Paper", DV("1vkxZnV3-GzSxUqAstejuXh4BejcYi0hM")], ["Cognitive Information Processing Theory (presentation)", DV("1czeLPoMbKyIQ-YqtWKX3oFOW86TwBXym")]]],
+    ["EME 603", "Inquiry and Measurement", 4, "i-chart", "k-olive",
+      "Through this course, I gained experience in educational research, inquiry, and measurement.",
+      "I learned how to formulate research questions, develop research instruments, and collect and analyze qualitative and quantitative data. I explored research methods such as surveys, interviews, and participant feedback to investigate educational challenges. This course strengthened my understanding of ethical research practices and the importance of using evidence to evaluate learning experiences and make informed instructional decisions.", [["Research Report (in progress)", "https://drive.google.com/file/d/1zLjcKOe4s7o3LcV6mUmjC_yPialpl_Jz/view"]]],
+    ["EME 605", "Introduction to Distance Learning", 4, "i-globe", "k-mint",
+      "Through this course, I developed an understanding of how effective learning experiences can be designed and delivered in online and distance education environments.",
+      "I explored distance learning models, digital learning platforms, instructional technologies, and strategies for engaging remote learners. I learned how to design accessible, interactive, and learner-centered online instruction while considering communication, collaboration, and assessment. This course strengthened my ability to create meaningful learning experiences beyond traditional classroom settings.",
+      [["Teaching and Learning at a Distance", "https://share.articulate.com/4wRo47i4Ey3KXB0JWJgzO"]]],
+    ["EME 607", "Introduction to Instructional Games and Simulations", 4, "i-star", "k-sun",
+      "This course introduced me to the exciting possibilities of game-based learning and instructional simulations.",
+      "I learned how to apply gamification principles, interactive storytelling, decision-making activities, and simulation-based learning strategies to enhance learner engagement. I gained experience designing instructional games that encourage active participation, problem-solving, and immediate feedback. This course helped me understand how meaningful game mechanics can transform complex learning objectives into engaging and memorable experiences.",
+      [["A Principal's First Year (simulation)", "https://claude.ai/artifact/KsS7dJncY5wpvcWb3fs2hC"], ["Case study", "#cs-principal"]]],
+    ["EME 610", "Trends and Issues in Instructional Design and Technology", 4, "i-spark", "k-sage",
+      "This course broadened my understanding of the evolving field of instructional design and technology.",
+      "I explored historical developments, emerging technologies, and contemporary challenges influencing education and workplace learning. I learned to critically evaluate technological innovations and consider their impact on instructional practices, learner engagement, and accessibility. This course encouraged me to remain adaptable, innovative, and informed about developments shaping the future of learning.", [["Needs Analysis Document", "https://drive.google.com/file/d/1EnB-Z_w6L4sMYENVvqFagwprr2P8UBjWwTv9lt2f454/view"]]],
+    ["EME 613", "Open Learning Environments and Artificial Intelligence", 4, "i-cpu", "k-forest",
+      "Through this course, I explored the role of open education and artificial intelligence in transforming learning experiences.",
+      "I developed an understanding of Open Educational Resources (OER), open pedagogy, and emerging AI-powered instructional technologies. I learned how to evaluate, adapt, and integrate digital resources and AI tools to support personalized learning, accessibility, and instructional innovation. This course encouraged me to think critically about the ethical and responsible use of artificial intelligence while exploring its potential to improve learning design and educational accessibility.", [["Recorded Session: Emotional Intelligence MOOC & open AI-enhanced textbook", "https://drive.google.com/file/d/18BgnOvbo-Nux-FjNb9S2m-Wx0D46NThU/view"]]],
+    ["EME 620", "Introduction to Systematic Instructional Design", 4, "i-steps", "k-olive",
+      "In this course, I strengthened my ability to design instruction through a structured, systematic process.",
+      "I learned how to analyze instructional problems, identify learner needs, develop measurable objectives, and design learning activities aligned with intended outcomes. I gained experience planning instructional materials, selecting appropriate delivery methods, and developing assessments to measure learning effectiveness. This course helped me connect instructional design theory with practical development and evaluation processes.", []],
+    ["EME 642", "Management of Change", 4, "i-cycle", "k-sage",
+      "In this course, I learned how organizational change influences the successful implementation of learning and performance improvement initiatives.",
+      "I explored change management models, organizational analysis, stakeholder engagement, and strategies for overcoming resistance to change. I developed an understanding of how to plan, communicate, implement, and evaluate change initiatives within organizations. This course helped me recognize that effective instructional design extends beyond developing training materials and requires an understanding of organizational culture, leadership, and human performance.", []],
+    ["EME 650", "Field Internship in Instructional Design and Technology", 0, "i-brief", "k-forest",
+      "My internship provided an opportunity to apply the knowledge and skills I gained throughout my graduate studies in a real-world corporate environment.",
+      "During my internship at NetWolves, I worked on instructional design and training development projects that addressed workplace learning needs. I gained hands-on experience developing eLearning modules, instructional materials, assessments, job aids, and interactive learning activities using industry-standard tools such as Articulate Rise 360. I also strengthened my skills in collaborating with stakeholders, organizing training content, and translating complex workplace procedures into clear, engaging learning experiences. This experience helped me bridge the gap between academic learning and professional instructional design practice.",
+      [["Internship at NetWolves", "#netwolves"], ["Certificate", DV("1aEoTzHfmFJo11eAZL4EFrik2eS_4kP16")]]],
+    ["EME 660", "Seminar in Instructional Design", 2, "i-users", "k-mint",
+      "Through this seminar, I expanded my understanding of instructional design as a professional discipline.",
+      "I explored contemporary instructional design practices, discussed emerging issues, and examined how theoretical concepts apply to real-world learning challenges. Collaborative discussions, research, and reflective activities helped me develop critical thinking and professional communication skills. This course encouraged me to evaluate instructional decisions from multiple perspectives and strengthened my identity as an instructional design professional.", []],
+    ["EME 661", "Advanced Seminar in Instructional Design", 2, "i-award", "k-sun",
+      "This course helped me integrate and reflect on the knowledge and skills I developed throughout my graduate program.",
+      "I explored advanced instructional design practices, professional ethics, stakeholder communication, networking, and career development strategies. I learned how to present my instructional design work professionally, articulate my design decisions, and demonstrate my competencies through a comprehensive portfolio. This course strengthened my confidence in communicating my value as an instructional designer and preparing for professional opportunities.",
+      [["This portfolio", "#portfolio"], ["One-page summary (PDF)", "files/Diti-Jay-Shah-Portfolio-Summary.pdf"]]]
+  ];
+  const meta = {
+    "EME 601": ["Dr. Minkyoung Kim", "Core"], "EME 602": ["Dr. Gunce Malan-Rush", "Core"], "EME 603": ["Dr. Minkyoung Kim", "Core"],
+    "EME 610": ["Dr. Minkyoung Kim", "Core"], "EME 620": ["Dr. Minkyoung Kim", "Core"], "EME 660": ["Prof. Susan Ensmann", "Core"],
+    "EME 661": ["Prof. Susan Ensmann", "Core"], "EME 605": ["Prof. Susan Ensmann", "Elective"], "EME 607": ["Prof. Demirbilek", "Elective"],
+    "EME 613": ["Prof. Susan Ensmann", "Elective"], "EME 642": ["Dr. Minkyoung Kim", "Elective"], "EME 650": ["Prof. Michelle Frankich", "Required Internship"]
+  };
+  const cGrid = document.getElementById("courseGrid"), cRows = document.getElementById("courseRows");
+  const workLink = ([label, href]) => { const ext = /^https?:|\.pdf$/.test(href); return '<a href="' + esc(href) + '"' + (ext ? ' target="_blank" rel="noopener"' : '') + '>' + esc(label) + (ext ? icon("i-out") : "") + '</a>'; };
+  const rank = c => ({Core:0, Elective:1}[meta[c][1]] ?? 2);
+  courses.sort((a, b) => rank(a[0]) - rank(b[0]) || a[0].localeCompare(b[0]));
+  courses.forEach(([code, title, cr, ic, k, lead, more, work]) => {
+    const card = el("article", "card course",
+      '<div class="head"><span class="clay ' + k + '">' + icon(ic) + '</span><div><span class="code">' + code + '</span><h3>' + esc(title) + '</h3></div></div>' +
+      '<div class="pills"><span class="credits">' + cr + (cr === 1 ? ' credit' : ' credits') + '</span><span class="type t-' + meta[code][1].split(" ")[0].toLowerCase() + '">' + meta[code][1] + '</span></div>' +
+      '<p class="instr">' + icon("i-user") + 'Instructor: ' + esc(meta[code][0]) + '</p>' +
+      '<p>' + esc(lead) + '</p>' +
+      '<details class="more"><summary><span class="plus">' + icon("i-plus") + '</span>What I learned</summary><div class="prose"><p>' + esc(more) + '</p></div></details>' +
+      (work.length ? '<div class="work"><span>Work in this portfolio</span>' + work.map(workLink).join("") + '</div>' : ''));
+    card.id = code.toLowerCase().replace(" ", "-");
+    cGrid.appendChild(card);
+    const tr = el("tr", "", '<td>' + code + '</td><td>' + esc(title) + '</td><td>' + esc(meta[code][0]) + '</td><td>' + meta[code][1] + '</td><td>' + cr + '</td><td>' + (work.length ? work.map(workLink).join(", ") : '') + '</td>');
+    cRows.appendChild(tr);
+  });
+
+  /* Research documents */
+  const docs = [
+    ["Theory Paper", "EME 602 · Paper", "A research paper on learning theory and how it shapes instructional design.", "book", "p-sage", "https://drive.google.com/file/d/1vkxZnV3-GzSxUqAstejuXh4BejcYi0hM/view"],
+    ["Research Report", "EME 603 · In progress", "The full study report.", "doc", "p-mint", "https://drive.google.com/file/d/1zLjcKOe4s7o3LcV6mUmjC_yPialpl_Jz/view"],
+    ["Article Review", "Analysis", "A critical review of published research.", "lens", "p-sage", "https://drive.google.com/file/d/1BOqWqtEEKvbDoGD2DMPxY3R_fHpYkk8K/view"],
+    ["Relating Theory with Practice", "Reflection", "Learning theory meets real design decisions.", "bridge", "p-olive", "https://drive.google.com/file/d/1bsHA9uYyeqF3ssbfAqL44cZFezO8zCmR/view"]
+  ];
+  const rGrid = document.getElementById("researchGrid");
+  docs.forEach(([t, tag, d, il, bg, url]) => {
+    const a = el("article", "card project", '<div class="pic ' + bg + '">' + ill(il) + '</div><div class="body"><span class="tag">' + tag + '</span><h3>' + esc(t) + '</h3><p>' + esc(d) + '</p><a class="btn" target="_blank" rel="noopener">Read Document' + icon("i-out") + '</a></div>');
+    a.querySelector("a").href = url; rGrid.appendChild(a);
+  });
+
+  /* Skills */
+  const skills = [
+    ["Instructional Design", "i-puzzle", "k-mint", ["ADDIE","Backward Design","Kemp Model","Needs Analysis","Task Analysis","Learning Objectives","Curriculum Development","Assessment Design","Evaluation","Storyboarding","Adult Learning","Learner-Centered Design"]],
+    ["Authoring & Media", "i-pen", "k-sun", ["Articulate 360 (Rise, Storyline)","Camtasia","Vyond","Canva","Figma","HeyGen","Video Production","Multimedia Development"]],
+    ["LMS & Learning and Development", "i-laptop", "k-sage", ["LMS","Canvas (SpartanLearn)","StudySync","YuJa","SCORM","xAPI","Virtual Training","Microlearning","Accessibility (WCAG)","Training Development","Job Aids","Knowledge Management","Project Coordination"]],
+    ["Technology & AI", "i-cpu", "k-forest", ["Microsoft Office","Microsoft Teams","SharePoint","Zoom","Excel","Claude","Replit","ChatGPT","Copilot","DeepSeek"]],
+    ["Support & Service", "i-headset", "k-olive", ["User Account Management","Ticket Monitoring","Incident Response System","Troubleshooting","Customer Service"]],
+    ["Professional", "i-users", "k-mint", ["Data Analysis","Cross-Functional Collaboration","SME Collaboration","Communication","Creative Problem Solving","Critical Thinking","Organization"]]
+  ];
+  const panel = document.getElementById("skillsPanel");
+  skills.forEach(([cat, ic, k, list]) => {
+    const g = el("div", "skill-group", '<h3><span class="clay ' + k + '">' + icon(ic) + '</span>' + esc(cat) + '</h3>');
+    const b = el("div", "badges"); list.forEach(s => b.appendChild(el("span", "skill-badge", esc(s))));
+    g.appendChild(b); panel.appendChild(g);
+  });
+
+  /* Frameworks */
+  const fws = [
+    ["ADDIE Model", "i-cycle", "k-forest", "Analysis, Design, Development, Implementation, Evaluation (Branch, 2009).", "Instruction answers a real need and is checked against results.", "Each module starts with audience analysis, moves through storyboarding and development, and ends with review and revision."],
+    ["Backward Design", "i-back", "k-mint", "Start from desired results, decide the evidence, then plan instruction (Wiggins & McTighe, 2005).", "Objectives, assessments and activities stay aligned.", "I write the outcome and the knowledge check first, then build the content that leads there."],
+    ["Kemp Model", "i-target", "k-sun", "A flexible, non-linear model of nine learner-centered elements (Morrison et al., 2019).", "Real projects rarely move in a straight line.", "I revisit learner needs, sequence and resources as feedback arrives."],
+    ["Andragogy", "i-users", "k-olive", "Adults learn best when learning is relevant, self-directed and experience-based (Knowles et al., 2015).", "Most of my audiences are working professionals.", "I use real workplace scenarios and explain the \"why\" up front."],
+    ["Universal Design for Learning", "i-access", "k-sage", "Multiple means of engagement, representation, and action and expression (CAST, 2024).", "Learning works for more people when variability is planned for.", "I pair text with visuals, audio and interactive practice."],
+    ["Gagné's Nine Events", "i-steps", "k-forest", "A sequence from gaining attention to retention and transfer (Gagné et al., 2005).", "Every lesson gets a complete, dependable structure.", "Modules open with a hook and objectives, give practice with feedback, and end with assessment."],
+    ["Bloom's Revised Taxonomy", "i-ladder", "k-mint", "Cognitive levels from remembering to creating (Anderson & Krathwohl, 2001).", "It turns vague goals into measurable objectives.", "I write objectives with observable verbs and match assessments to each level."],
+    ["Mayer's Multimedia Principles", "i-image", "k-sun", "Coherence, signaling and segmenting reduce extraneous load (Mayer, 2020).", "Working memory is limited.", "Short segments, clear visual cues and only the media that supports the message."],
+    ["Kirkpatrick's Four Levels", "i-chart", "k-olive", "Reaction, learning, behavior, and results (Kirkpatrick & Kirkpatrick, 2016).", "It links training to performance, not just completion.", "I plan evaluation alongside design, from feedback to on-the-job application."],
+    ["WCAG 2.1", "i-eye", "k-sage", "Guidelines for perceivable, operable, understandable and robust content (W3C, 2018).", "Accessible content reaches every learner.", "Strong color contrast, alt text, captions and keyboard-friendly interactions."]
+  ];
+  const fwGrid = document.getElementById("frameworks");
+  fws.forEach(([name, ic, k, what, why, how]) => {
+    const d = el("details", "card tile fw",
+      '<summary><span class="clay ' + k + '">' + icon(ic) + '</span><h3>' + esc(name) + '</h3><span class="hint"><span class="plus">' + icon("i-plus") + '</span>How I use it</span></summary>' +
+      '<dl><div><dt>What it is</dt><dd>' + esc(what) + '</dd></div><div><dt>Why it matters</dt><dd>' + esc(why) + '</dd></div><div><dt>How I apply it</dt><dd>' + esc(how) + '</dd></div></dl>');
+    fwGrid.appendChild(d);
+  });
+
+  /* Gallery + lightbox */
+  const lb = document.getElementById("lightbox"), lbImg = document.getElementById("lbImg"), lbCap = document.getElementById("lbCap");
+  const openLb = (src, cap) => { lbImg.src = src; lbImg.alt = cap; lbCap.textContent = cap; if (lb.showModal) lb.showModal(); };
+  const photos = [
+    ["images/utampa-1.jpg", "Cohort with alumni guests after the Mock Interview Simulation game in the Advanced Seminar course"],
+    ["images/utampa-2.jpg", "M.S. cohort and faculty together in a University of Tampa classroom"],
+    ["images/utampa-3.jpg", "Cohort group photo in front of the Tampa skyline at sunset"],
+    ["images/utampa-4.jpg", "Classmates gathered in a seminar room as the sun sets over campus"],
+    ["images/utampa-5.jpg", "Diti (right) with colleagues at a Virtually Everything event"],
+    ["images/utampa-6.jpg", "Class session with a virtual guest speaker: \"Thank you for your time & expertise!\""]
+  ];
+  const gal = document.getElementById("photos");
+  photos.forEach(([src, cap]) => {
+    const b = el("button", "", '<img loading="lazy"><span class="cap"></span>'); b.type = "button";
+    const img = b.querySelector("img"); img.src = src; img.alt = cap; b.querySelector(".cap").textContent = cap;
+    b.addEventListener("click", () => openLb(src, cap)); gal.appendChild(b);
+  });
+  document.getElementById("certBtn").addEventListener("click", () => openLb("images/internship-certificate.jpg", "Certificate of Achievement, NetWolves Training and Development Internship Program"));
+  document.getElementById("lbClose").addEventListener("click", () => lb.close());
+  lb.addEventListener("click", e => { if (e.target === lb) lb.close(); });
+
+  /* Intro video */
+  const introDlg = document.getElementById("introDlg"), introVideo = document.getElementById("introVideo");
+  document.querySelectorAll("[data-intro]").forEach(b => b.addEventListener("click", () => { if (introDlg.showModal) introDlg.showModal(); introVideo.play().catch(() => {}); }));
+  document.getElementById("introClose").addEventListener("click", () => introDlg.close());
+  introDlg.addEventListener("close", () => introVideo.pause());
+
+  /* Router */
+  const pages = [...document.querySelectorAll(".page")];
+  const navLinks = [...document.querySelectorAll("[data-nav]")];
+  const nav = document.getElementById("siteNav"), toggle = document.getElementById("navToggle");
+  function route() {
+    const id = decodeURIComponent(location.hash.slice(1)) || "home";
+    let target = document.getElementById(id);
+    if (!target || !(target.classList.contains("page") || target.closest(".page"))) target = document.getElementById("home");
+    const page = target.classList.contains("page") ? target : target.closest(".page");
+    if (target.tagName === "DETAILS") target.open = true;
+    pages.forEach(p => { p.hidden = p !== page; });
+    navLinks.forEach(a => a.dataset.nav === page.id ? a.setAttribute("aria-current", "page") : a.removeAttribute("aria-current"));
+    nav.classList.remove("open"); toggle.setAttribute("aria-expanded", "false");
+    if (document.activeElement && nav.contains(document.activeElement)) document.activeElement.blur();
+    if (target === page) window.scrollTo({ top: 0, behavior: "instant" });
+    else requestAnimationFrame(() => target.scrollIntoView({ behavior: "smooth", block: "start" }));
+  }
+  window.addEventListener("hashchange", route);
+  route();
+  toggle.addEventListener("click", () => { const open = nav.classList.toggle("open"); toggle.setAttribute("aria-expanded", String(open)); });
+  document.getElementById("toTop").addEventListener("click", e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+
+  /* Copy buttons */
+  const toast = document.getElementById("toast"); let tt;
+  const show = m => { toast.textContent = m; toast.hidden = false; clearTimeout(tt); tt = setTimeout(() => toast.hidden = true, 1800); };
+  document.querySelectorAll("button[data-copy]").forEach(btn => btn.addEventListener("click", () => {
+    const v = btn.dataset.copy;
+    const fallback = () => { const r = document.createRange(); r.selectNodeContents(btn.parentElement.querySelector(".val")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); show("Selected. Press Ctrl+C to copy"); };
+    if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(v).then(() => show("Copied " + v), fallback); else fallback();
+  }));
+})();
+</script>
+
+</body>
+</html>
